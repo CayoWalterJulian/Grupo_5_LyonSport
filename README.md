@@ -11,9 +11,8 @@ Me presento soy Martin Lopez, tengo 20 años y estudio en la Facultad de Humanid
 
 Me presento mi nombre es Mariel Rocio Colque tengo 21 años, me gusta escuchar musica y leer libros y estoy a disposicion de ayudar 
 
-Hola! Mi nombre es Luis León , tengo 17 años , mi pasatiempo es jugar al futbol y escuchar musica. Sera un placer ayudarlos!!
+Hola! Soy León , Luis .Tengo 17 años , mi pasatiempo es jugar al futbol y escuchar musica. Sera un placer ayudarlos. 
 
-paginas de referencia:
 https://www.nike.com.ar/ Nos gusto mucho la pagina de home que tiene, que presenta el material y un video de inicio.
 https://ar.puma.com/rebajas.html Nos gusto el catalogo de rebajas que tiene la pagina.
 https://www.adidas.com.ar/ En esta pagina nos llamo la atencion que casi al final de la pagina nos dan informacion de la compañia y tambien como esta puesto lo destacado.
