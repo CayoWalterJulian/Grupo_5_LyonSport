@@ -8,7 +8,7 @@ Hola mi nombre es Cayo, Walter Julian no soy muy bueno en esto pero me gusta y e
 Mi nombre es Martin Javier Echenique, tengo 19 años y me gusta todo lo relacionado a la musica y el arte en general.
 
 Me presento soy Martin Lopez, tengo 20 años y estudio en la Facultad de Humanidades.
-
+Me presento mi nombre es Mariel Rocio Colque tengo 21 años, me gusta escuchar musica y leer libros y estoy a disposicion de ayudar 
 paginas de referencia:
 https://www.nike.com.ar/ Nos gusto mucho la pagina de home que tiene que presenta el materias y un video de inicio.
 https://ar.puma.com/rebajas.html Nos gusto el catalogo de rebajas que tiene la pagina.
