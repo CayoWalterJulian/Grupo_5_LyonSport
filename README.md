@@ -15,7 +15,7 @@ Hola! Soy León, Luis. Tengo 17 años, mi pasatiempo es jugar al futbol y escuch
 
 paginas de referencia:
 
-https://www.nike.com.ar/ Nos gusto mucho la pagina de home que tiene, que presenta el material y un video de inicio.
+https://www.nike.com.ar/ Nos gusto mucho la pagina de home que tiene que presenta el materias y un video de inicio.
 https://ar.puma.com/rebajas.html Nos gusto el catalogo de rebajas que tiene la pagina.
 https://www.adidas.com.ar/ En esta pagina nos llamo la atencion que casi al final de la pagina nos dan informacion de la compañia y tambien como esta puesto lo destacado.
 https://tienda.fila.com.ar/ En la pagina tiene algo llamativo que es el filtro de precios, en el cual se define cuanto a cuando deseas gastar.
