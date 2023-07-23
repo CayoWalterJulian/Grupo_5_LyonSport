@@ -1,0 +1,9 @@
+Fuente: Lora
+
+Colores: #f8be09 (Amarillo Primario)
+         #FF1100(Rojo)
+         #ffffff (Blanco)
+         #000000 (Negro)
+
+
+https://www.color-hex.com/color/f8be09
