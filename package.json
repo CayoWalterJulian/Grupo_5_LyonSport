@@ -1,0 +1,16 @@
+{
+  "name": "grupo_5_lyonsport",
+  "version": "1.0.0",
+  "description": "Hola, este es nuestro negocio, es de ventas de todo tipo de ropa y articulo deportivo, el cual se encuentra abierto a publico de todas las edades",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
