@@ -1,0 +1,7 @@
+perfil ( https://nikearprod.vtexassets.com/arquivos/ids/659236-800-800?v=638221818054130000&width=800&height=800&aspect=true )
+abajo ( https://nikearprod.vtexassets.com/arquivos/ids/661844-800-800?v=638221859164100000&width=800&height=800&aspect=true )
+arriba ( https://nikearprod.vtexassets.com/arquivos/ids/667060-800-800?v=638222661342600000&width=800&height=800&aspect=true )
+45° ( https://nikearprod.vtexassets.com/arquivos/ids/669655-800-800?v=638222699388800000&width=800&height=800&aspect=true )
+colores ( https://nikearprod.vtexassets.com/arquivos/ids/530538-800-800?v=638161365904170000&width=800&height=800&aspect=true
+          https://nikearprod.vtexassets.com/arquivos/ids/530557-800-800?v=638161366153170000&width=800&height=800&aspect=true
+          https://nikearprod.vtexassets.com/arquivos/ids/702800-800-800?v=638233933233000000&width=800&height=800&aspect=true )
