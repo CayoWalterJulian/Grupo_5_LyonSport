@@ -1,0 +1,112 @@
+body{
+    font-family: 'Lora', serif;
+}
+footer{
+    border-top: solid 3px #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.cuadro{
+    border: solid #666 1px;
+    margin: 10px;
+    padding: 5px;
+}
+.peticiones{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+}
+.logo{
+    max-width: 80px;
+}
+.ofertas{
+    display: flex;
+    justify-content: space-between;
+}
+.imgoferta{
+    width: 20vw;
+}
+.buscador{
+    color: #666;
+    background-color: white;
+    border: solid #666 1px;
+    width: 25vw;
+    border-radius: 5px;
+}
+.lupa{
+    position: relative;
+    left: 2.5vw;
+}
+.ingresar{
+
+    font-size:medium;
+    width: 500px;
+    margin: 5px;
+}
+.carrito{
+
+    font-size:medium;
+    margin: 5px;
+}
+.deseos{
+
+    font-size:medium;
+    margin: 5px;
+}
+.cajadestacado{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 483px){
+    footer{
+        display: block;
+    }
+    .buscador{
+        width: 130px;
+    }
+    .lupa{
+        left: 30px;
+    }
+    .imgoferta{
+        width: 100%;
+    }
+    .slider{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .cuadro{
+        flex: 1 0 auto;
+        margin: 0 50px;
+        width: 300px;
+    }
+    .cuadrodestacados{
+        align-items:end;
+        flex: 1 0 auto;
+        margin: 0 50px;
+        width: 300px;
+    }
+}
+
+
+@media (min-width: 769px){
+    .buscador{
+        width: 140px;
+    }
+    .lupa{
+        left: 40px;
+    }
+}
