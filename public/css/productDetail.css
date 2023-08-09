@@ -25,21 +25,66 @@ label{
 .margen{
     margin-left: 4%;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
 /* ---------------------------------------- */
 
 
 /* Ajustes a Header */
 /* ---------------------------------------- */
 header{
-    display: flex;
-    background-color: white;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
+   background-color: #f8be09;
 }
 
-.logo img{
-    width: 70px;
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.peticiones{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buscador{
+    color: #666;
+    background-color: white;
+    border: solid #666 1px;
+    width: 25vw;
+    border-radius: 5px;
+}
+.lupa{
+    position: relative;
+    left: 2.5vw;
+}
+.ingresar{
+
+    font-size:medium;
+    width: 500px;
+    margin: 5px;
+}
+.carrito{
+
+    font-size:medium;
+    margin: 5px;
+}
+.deseos{
+
+    font-size:medium;
+    margin: 5px;
+}
+
+.logo{
+    max-width: 80px;
 }
 /* ---------------------------------------- */
 
@@ -48,6 +93,11 @@ header{
 
 /* Ajustes a Main */
 /* ---------------------------------------- */
+main{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 0%, rgba(140,140,140,1) 0%, rgba(191,191,191,1) 0%, rgba(218,218,218,1) 70%, rgba(222,222,222,1) 100%, rgba(255,255,255,1) 100%); 
+    padding-bottom: 20px;
+}
 .topmain{
     display: flex;
     align-items: center;
@@ -58,6 +108,7 @@ header{
 
 .otroAngulo img{
     width: 150px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .otroAngulo img:hover{
     cursor: pointer;
@@ -71,6 +122,7 @@ header{
 
 .producto img{
     width: 600px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .detalles{
@@ -80,12 +132,18 @@ header{
 .precio-codigo{
     display: flex;
     margin-top: 20px;
+    align-items: center;
+}
+.precio{
+    font-size: 2em;
+    color: rgb(0, 69, 0);
 }
 .codigo{
     margin-left: 20px;
 }
 .formasDePago img{
-    width: 40px;
+    width: 30px;
+    margin-top: 5px;
 }
 .formasDePago{
     margin-top: 20px;
@@ -97,7 +155,7 @@ header{
     width: 50px;
     height: 50px;
     text-align: center;
-    border: solid 3px #FF1100;
+    border: solid 2px ;
 }
 .cantidad{
     margin-top: 20px;
@@ -106,7 +164,7 @@ header{
     width: 50px;
     height: 50px;
     text-align: center;
-    border: solid 3px #FF1100;
+    border: solid 2px ;
 }
 .anhadirCarrito{
     margin-top: 20px;
@@ -114,6 +172,12 @@ header{
 .anhadirCarrito button{
     width: 400px;
     height: 80px;
+    border: solid 2px ;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .comprar{
     margin-top: 20px;
@@ -121,17 +185,39 @@ header{
 .comprar button{
     width: 400px;
     height: 80px;
+    border: solid 2px ;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.comprar button:hover{
+    background-color: #f8be09;
+}
+.anhadirCarrito button:hover{
+    background-color: #f8be09;
 }
 .envio{
     margin-top: 20px;
 }
 .guiaTalles{
     margin-top: 20px;
+    display: flex;
+}
+.guiaTalles p{
+    font-weight: 900;
+}
+.guiaTalles p:hover{
+    cursor: pointer;
+    color: #f8be09;
 }
 
 
 .colores img{
     width: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 10px;
 }
 .colores img:hover{
     cursor: pointer;
@@ -139,7 +225,7 @@ header{
 .colores{
     display: flex;
     justify-content: center;
-    margin-right: 12%;
+    margin-right: 25%;
     margin-top: -5%;
 }
 
@@ -151,5 +237,49 @@ header{
 }
 .recomendaciones img{
     width: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* ---------------------------------------- */
+
+/* Ajustes footer */
+/* ---------------------------------------- */
+footer{
+    border-top: solid 3px #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+/* ---------------------------------------- */
+
+
+
+/* Media Queries */
+/* ---------------------------------------- */
+@media (max-width: 483px){
+    footer{
+        display: block;
+    }
+    .buscador{
+        width: 130px;
+    }
+    .lupa{
+        left: 30px;
+    }
+}
+
+
+@media (min-width: 769px){
+    .buscador{
+        width: 140px;
+    }
+    .lupa{
+        left: 40px;
+    }
 }
 /* ---------------------------------------- */
