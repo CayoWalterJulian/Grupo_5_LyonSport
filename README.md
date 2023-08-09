@@ -22,3 +22,6 @@ https://tienda.fila.com.ar/ En la pagina tiene algo llamativo que es el filtro d
 https://www.underarmour.com.ar/ La presentacion de los productos detacan mucho.
 https://www.reebok.com.ar/ Me gusto el interfaz de busqueda, login y el carrito.
 https://www.solodeportes.com.ar/ La pagina muestra los nuevos lanzamientos que hubieron y los articulos que mas se vendieron.
+
+
+Link del tablero de trabajo: https://trello.com/invite/b/oN1YWplw/ATTIe09df0df195ff5d2e61d98058f85fc8a7EA11B08/lyonsports
