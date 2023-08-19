@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stylesHome.css">
+    <link rel="stylesheet" href="/css/stylesLogin.css">
     <title>LyonSport</title>
 
     <style>
@@ -28,13 +28,25 @@
 
     <main>
         <section class="ingreso">
-            <input class="controls" type="text", "email" name="usuario" id="nombres" placeholder="usuario o correo electronico">
-            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-            <label>
-                <input class="check" type="checkbox"
-                name="intereses" value="interes">Mantener cuenta  abierta
-            </label>
-            <input class="botons" type="submit" value="Ingresar">
+            <form action="/" method="get">
+                <h2>Ingresar</h2>
+                <div class="formulario">
+                    <input type="text" type="email" id="usuario" name="usuario_mail" required placeholder="Usuario o Email">
+                </div>
+                <div class="formulario">
+                    <input type="password" id="contraseña" name="password" required placeholder="ingresar Contraseña">
+                </div>
+                <div class="formulario">
+                    <label for="interes">
+                        <input class="check" type="checkbox" name="intereses" value="interes">¿Recordar cuenta?
+                    </label>
+                </div>
+                <div class="botones">
+                    <buttom type="submit"></buttom>
+                    <input type="submit" id="boton" value="Ingresar">
+                    <a href="/register"><input type="button" id="boton2" value="Crear Cuenta"></a>
+                </div>
+            </form>
         </section>
     </main>
 
