@@ -11,16 +11,7 @@
 </head>
 <body>
     <header>
-        <section class="titulo">
-            <nav> <a href="/"><img class="logo" src="/img/logopng.png" alt="Aquí va una foto" ></a></nav>
-            <h2> LyonSport</h2>
-        </section>
-        <section class="peticiones">
-        <h6 class="buscador">Buscar productos<a href="/" class="lupa"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a><h6>
-        <a class="ingresar" href="/login"><i class="fa-solid fa-user"></i></a>
-        <a class="deseos" href="/deseos"><i class="fa-sharp fa-regular fa-heart"></i></a>
-        <a class="carrito" href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </section>
+        <%- include('./partials/header') %>
     </header>
 
 
@@ -143,44 +134,7 @@
 
 
     <footer>
-        <section class="elfooter">
-            <h4>Contactanos</h4>
-            <article>
-                <div><i class="fa-solid fa-envelope"></i>LyonSport@gmail.com</div>
-            </article>
-            <article>
-                <div><i class="fa-solid fa-phone"></i>3885748722</div>
-            </article>
-            <article>
-                <div><i class="fa-brands fa-whatsapp"></i>3885820709</div>
-            </article>
-        </section>
-        <section class="elfooter">
-            <h4>Ayuda</h4>
-            <article>
-                <div><a href="">Locales</a></div>
-                <div><a href="">Preguntas Frecuentes</a></div>
-                <div><a href="">Estado de mi pedido</a></div>
-                <div><a href="">Términos y condiciones</a></div>
-                <div><a href="">Cambios y devoluciones</a></div>
-                <div><a href="">Defensa del consumidor</a></div>
-            </article>
-        </section>
-        <section class="elfooter">
-            <h4>Redes Sociales</h4>
-            <article>
-                <div><i class="fa-brands fa-discord"></i>Discord</div>
-            </article>
-            <article>
-                <div><i class="fa-brands fa-facebook"></i>Facebook</div>
-            </article>
-            <article>
-                <div><i class="fa-brands fa-twitter"></i>twitter</div>
-            </article>
-            <article>
-                <div><i class="fa-brands fa-instagram"></i>Instagram</div>
-            </article>
-        </section>
+        <%- include('./partials/footer') %>
     </footer>
 </body>
 </html>

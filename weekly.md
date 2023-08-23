@@ -1,3 +1,5 @@
+Weekly 20 Agosto
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
 Julian: Se realizo gran parte de la estrucutra de login, y diseño. Se empezo a hacer el sprint 3.
 Javier: Se realizo el html del productCart.
@@ -9,6 +11,7 @@ Javier: Dificultad para pensar pensar en la estructura del productCart, sin util
 Luis: Se me dificulto en la parte de estilos ya que me saltaba error por cuestiones que desconocia pero pude resolverlo y terminarlo bien.
 
 ● Qué va a hacer los dias siguientes:
-Julian: Implementar MVC. Los programas index.html y crear sus rutas y controladores.
+Julian: Implementar MVC. Los programas index.html, crear sus rutas y controladores.
 Javier: Cambiar archivos a ejs. Terminar de hacer el productCart.
-Luis:
+Luis: Me centralizare en separar las vistas en carpetas y separar componentes repetidos.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
