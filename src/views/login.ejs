@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LyonSport</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesLogin.css">
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+        </style>
+    </head>
+<body>
+        
+    <%- include('./partials/header') %>
+
+
+    <main>
+        <section class="ingreso">
+            <form action="/" method="get">
+                <h2>Ingresar</h2>
+                    <input type="text" type="email" id="usuario" name="usuario_mail" required placeholder="Usuario o Email">
+                    <input type="password" id="contraseña" name="password" required placeholder="ingresar Contraseña">
+                    <label for="interes">
+                        <input class="check" type="checkbox" name="intereses" value="interes">¿Recordar cuenta?
+                    </label>
+                    <div class="botones"><buttom type="submit"></buttom>
+                    <input type="submit" id="boton" value="Ingresar">
+                    <a href="/register"><input type="button" id="boton2" value="Crear Cuenta"></a></div>
+            </form>
+        </section>
+    </main>
+
+
+    <%- include('./partials/footer') %>
+
+</body>
+</html>
