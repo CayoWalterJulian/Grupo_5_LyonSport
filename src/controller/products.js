@@ -1,23 +1,14 @@
-const airForce = (req,res)=>{
-    res.render("airForce")
-}
+const products = require('../data/products.json')
 
-const airMax = (req,res) => {
-    res.render("airMax")
-}
 
-const jordan = (req,res) => {
-    res.render("jordan")
-}
+const productDetail = (req,res) => {
+    const { id } = req.params;
+    const product = products.find(p => p.id == id)
 
-const react = (req,res) => {
-    res.render("react")
+    res.render('productDetail', {product})
 }
-
+ 
 
 module.exports= {
-    airForce,
-    airMax,
-    jordan,
-    react
+    productDetail
 }

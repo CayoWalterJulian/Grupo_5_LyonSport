@@ -3,110 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="productCart.css">
     <title>Carrito</title>
+    <link rel="stylesheet" href="css/productCart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <%- include('./partials/header') %>
     </header>
+
     <main>
-        <form action="">
-            <label for="correo">Correo electronico <span>*</span></label>
-            <input type="email" name="correo" id="" placeholder="Correo electronico" required>
+        <div class="productsCart">
+            <h3>Carrito de compras vacio</h3>
+            <a href="/">Agregar productos</a>
+        </div>
 
-            <label for="telefono">Numero telefonico</label>
-            <input type="number" name="telefono" placeholder="Numero telefonico">
-
-            <label for="nombre">Nombre <span>*</span></label>
-            <input type="text" name="nombre" required>
-
-            <label for="apellido">Apellido <span>*</span></label>
-            <input type="text" name="apellido" id="" required>
-
-            <label for="calle">Calle <span>*</span></label>
-            <input type="text" name="calle" id="" required>
-
-            <label for="altura">Altura <span>*</span></label>
-            <input type="text" name="altura" id="" required>
-
-            <label for="piso">Piso</label>
-            <input type="text" name="piso">
-
-            <label for="observaciones">Observaciones</label>
-            <input type="text" name="observaciones" id="" >
-
-            <label for="provincia">Provincia <span>*</span></label>
-            <select name="provincia" id="" required>
-                <option value="">Buenos Aires</option>
-                <option value="">CABA</option>
-                <option value="">Catamarca</option>
-                <option value="">Chaco</option>
-                <option value="">Chubut</option>
-                <option value="">Cordoba</option>
-                <option value="">Corrientes</option>
-                <option value="">Entre Rios</option>
-                <option value="">Formosa</option>
-                <option value="">Jujuy</option>
-                <option value="">La Pampa</option>
-                <option value="">La Rioja</option>
-                <option value="">Mendoza</option>
-                <option value="">Misiones</option>
-                <option value="">Neuquen</option>
-                <option value="">Rio Negro</option>
-                <option value="">Salta</option>
-                <option value="">San Juan</option>
-                <option value="">San Luis</option>
-                <option value="">Santa Cruz</option>
-                <option value="">Santa Fe</option>
-                <option value="">Santiago del Estero</option>
-                <option value="">Tierra del Fuego</option>
-                <option value="">Tucuman</option>
-            </select>
-
-            <label for="ciudad">Ciudad <span>*</span></label>
-            <input type="text" name="ciudad" id="" required>
-
-            <label for="postal">Codigo Postal <span>*</span></label>
-            <input type="number" name="" id="" required>
-
-            <label for="documento">Documento <span>*</span></label>
-            <input type="number" name="documento" id="" required>
-        </form>
-
-
-        <div>
-            <h2>Resumen</h2>
-
-            <div>
-                <p>Costo de envio: </p>
-                <p>Coste del carrito de compras: </p>
-                <p>Articulos en el carrito: </p>
-
-                <h3>Total</h3>
-            </div>
-
-            <div>
-                <label for="metodoPago">Metodo de Pago</label>
-                <select name="metodoPago" id="">
-                    <option value="">Visa</option>
-                    <option value="">Mastercard</option>
-                    <option value="">Mercado Pago</option>
-                    <option value="">Paypal</option>
-                    <option value="">Rapipago</option>
-                </select>
-            </div>
-
-            <label for="tarjeta">Numero de tarjeta</label>
-            <input type="number" name="tarjeta" id="">
-
-            <label for="vencimiento">Vencimiento</label>
-            <input type="date" name="vencimiento" id="">
-
-            <label for="cvv">CVV</label>
-            <input type="number" name="cvv" id="">
-
-            <button>Proceder con el pago</button>
+        <div class="resumen">
+            <h3>Resumen de compra</h3>
+            <p>Aqui veras los importes de tu compra una vez que <br>
+            agregues productos</p>
         </div>
     </main>
 
