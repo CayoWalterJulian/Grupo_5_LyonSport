@@ -2,6 +2,7 @@ const express = require('express')
 const { router } = require("./routes/index");
 const { products } = require('./routes/products');
 const login = require("./routes/login")
+const {editoradd}= require("./routes/aditoradd");
 
 
 const app = express();
@@ -17,8 +18,11 @@ app.listen(PORT, () => {
 
 
 
+
 app.use("/", router);
 
 app.use("/products", products);
 
 app.use("/login", login)
+
+app.use("", editoradd)
