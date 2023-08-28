@@ -15,3 +15,21 @@ Julian: Implementar MVC. Los programas index.html, crear sus rutas y controlador
 Javier: Cambiar archivos a ejs. Terminar de hacer el productCart.
 Luis: Me centralizare en separar las vistas en carpetas y separar componentes repetidos.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Weekly 27 Agosto
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+● Qué hizo esta semana:
+Julian: Se crearon las rutas y controladores correspondientes para las tareas asignadas(login, agregar y modificar productos y index) y cambios de html a ejs.
+Javier: Creacion de productDetail en ejs, creacion de estilo en el carrito
+Luis: 
+
+● Si se encontró con algún impedimento:
+Julian: Conectar rutas y controladores y tiempo justos.
+Javier: Ningun impedimento 
+Luis: 
+
+● Qué va a hacer los dias siguientes:
+Julian: Agregar detalles a las paginas y espera de siguientes tareas.
+Javier: Crear css de header y footer, agregar detalles de productos
+Luis: 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
