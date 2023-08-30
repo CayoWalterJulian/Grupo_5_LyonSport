@@ -1,7 +1,8 @@
 const express = require('express')
 const { router } = require("./routes/index");
 const { products } = require('./routes/products');
-const login = require("./routes/login")
+const login = require("./routes/login");
+const register = require("./routes/register");
 const {editoradd}= require("./routes/aditoradd");
 
 
@@ -24,5 +25,7 @@ app.use("/", router);
 app.use("/products", products);
 
 app.use("/login", login)
+
+app.use("/register", register)
 
 app.use("", editoradd)
