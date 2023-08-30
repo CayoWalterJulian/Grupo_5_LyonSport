@@ -1,24 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: #f8be09;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #1b1d31;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+
 main{ 
-    padding-bottom: 20px;
+padding: 40px;
     display: flex;
     justify-content: center;
     text-align: center; 
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b1d31;
+}
+
+header{
+    background-color: #f8be09;
+}
+
 form {
     background-color: #24253c;
     display: flex;
@@ -28,11 +29,14 @@ form {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 form h2 {
     font-size: 30px;
     color: #edf0f0;
     margin-bottom: 35px;
 }
+
+
 input {
     padding: 17px;
     border-radius: 25px;
@@ -43,6 +47,7 @@ input {
     color: #ffffff;
     font-size: 16px;
 }
+
 footer{
     border-top: solid 3px #ebebeb;
     display: flex;
@@ -55,11 +60,10 @@ footer{
 footer a{
     color: white;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
 
+::placeholder {
+    color: #898798;
+}
 
 .btn {
     background-color: #e53854;
@@ -71,7 +75,6 @@ a{
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
 }
-
 .peticiones{
     width: 95%;
     display: flex;
@@ -94,21 +97,22 @@ a{
 }
 .lupa{
     position: relative;
-    left: 2.5vw;
+    left: 1vw;
+    color: black;
 }
 .ingresar{
-
+    color: black;
     font-size:medium;
     width: 500px;
     margin: 5px;
 }
 .carrito{
-
+    color: black;
     font-size:medium;
     margin: 5px;
 }
 .deseos{
-
+    color: black;
     font-size:medium;
     margin: 5px;
 }
@@ -117,30 +121,13 @@ a{
 }
 
 
-::placeholder {
-    color: #898798;
-}
+@media (max-width:991px) {
 
-
-
-
-@media (max-width: 483px){
-    footer{
-        display: block;
+    body {
+        padding: 30px;
     }
-    .buscador{
-        width: 130px;
-    }
-    .lupa{
-        left: 28px;
-    }
-}
 
-@media (min-width: 769px){
-    .buscador{
-        width: 140px;
-    }
-    .lupa{
-        left: 38px;
+    form {
+        width: 340px;
     }
 }

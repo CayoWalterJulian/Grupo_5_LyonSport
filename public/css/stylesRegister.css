@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+main{ 
+padding: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1b1d31;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+}
+
+header{
+    background-color: #f8be09;
 }
 
 form {
@@ -40,6 +47,19 @@ input {
     font-size: 16px;
 }
 
+footer{
+    border-top: solid 3px #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer a{
+    color: white;
+}
+
 ::placeholder {
     color: #898798;
 }
@@ -54,6 +74,51 @@ input {
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
 }
+.peticiones{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+}
+.logo{
+    max-width: 80px;
+}
+.buscador{
+    color: #666;
+    background-color: white;
+    border: solid #666 1px;
+    width: 25vw;
+    border-radius: 5px;
+}
+.lupa{
+    color: black;
+    position: relative;
+    left: 1vw;
+}
+.ingresar{
+    color: black;
+    font-size:medium;
+    width: 500px;
+    margin: 5px;
+}
+.carrito{
+    color: black;
+    font-size:medium;
+    margin: 5px;
+}
+.deseos{
+    color: black;
+    font-size:medium;
+    margin: 5px;
+}
+.ingreso{
+    margin: 50px;
+}
+
 
 @media (max-width:991px) {
 
