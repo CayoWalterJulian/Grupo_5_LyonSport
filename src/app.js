@@ -3,6 +3,7 @@ const { router } = require("./routes/index");
 const { products } = require('./routes/products');
 const login = require("./routes/login")
 const {editoradd}= require("./routes/aditoradd");
+const register = require("./routes/register");
 
 
 const app = express();
@@ -26,3 +27,5 @@ app.use("/products", products);
 app.use("/login", login)
 
 app.use("", editoradd)
+
+app.use("/register", register)
