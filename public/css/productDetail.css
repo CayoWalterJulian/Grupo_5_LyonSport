@@ -97,6 +97,9 @@ main{
     background-color: rgb(245, 242, 242); 
     padding-bottom: 20px;
 }
+span{
+    color:rgb(0, 34, 255);;
+}
 .topmain{
     display: flex;
     align-items: center;
@@ -238,6 +241,7 @@ main{
     width: 400px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 /* ---------------------------------------- */
 
 /* Ajustes footer */

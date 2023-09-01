@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/footerHeader.css">
 </head>
 <body>
-    <header>
-        <%- include('./partials/header') %>
-    </header>
+    <%- include('./partials/header') %>
 
 
     <main>
@@ -83,10 +82,17 @@
                     </form>
                 </div>
 
+
+                
                 <!-- Agregar a futuro algoritmo para calcular el costo de envio y poner el dia -->
                 <div class="envio">
-                    <p>Te llega el <span>dia</span> por <span>precio</span></p>
+                    <p>Te llega el <span>viernes</span> por <span style="color: green;">$853</span></p>
                 </div>
+
+
+
+
+                
                 <div class="guiaTalles">
                     <p>Guia de talles</p>
                 </div>
@@ -131,8 +137,8 @@
     </main>
 
 
-    <footer>
-        <%- include('./partials/footer') %>
-    </footer>
+
+    <%- include('./partials/footer') %>
+
 </body>
 </html>
