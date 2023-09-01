@@ -129,8 +129,9 @@ span{
 
 .detalles{
     margin-right: 10%;
-
+    width: 20%;
 }
+
 .precio-codigo{
     display: flex;
     margin-top: 20px;

@@ -68,7 +68,7 @@ header a:hover, footer a:hover{
 }
 
 footer{
-    border-top: solid 3px #ebebeb;
+    border-top: solid 3px #f8f8f8;
     display: flex;
     justify-content: space-around;
     background-color: black;

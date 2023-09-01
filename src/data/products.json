@@ -48,7 +48,10 @@
         "similar3": "/images/React/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DH5392-003"
+        "similar3link": "DH5392-003",
+        "color1": "/images/Jordan/color1.webp",
+        "color2": "/images/Jordan/color2.webp",
+        "color3": "/images/Jordan/color3.webp"
     },
     {
         "id": "DH5392-003",
