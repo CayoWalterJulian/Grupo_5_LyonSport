@@ -36,3 +36,24 @@ Estar organizados, y en contacto continuo.
 -
 -------------------------------------------------------------------
 
+Sprint 4
+-------------------------------------------------------------------
+Comenzar a hacer: 
+Inspirarnos con paginas que sean comunes a nuestra pagina.
+
+
+Hacer más: 
+Tener mas en cuenta el tablero.
+Poner en practica las fuentes de datos.
+
+Continuar haciendo:
+Seguir en contacto seguido.
+Tener en cuenta los problemas de otros.
+
+
+Hacer menos:
+-
+
+Dejar de hacer:
+-
+-------------------------------------------------------------------
