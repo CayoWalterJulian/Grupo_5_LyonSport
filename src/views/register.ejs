@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Register</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/stylesRegister.css">
         <link rel="stylesheet" href="/css/footerHeader.css">
@@ -14,20 +14,18 @@
         <%- include('./partials/header') %>
         
         <main>
-          <section>
-            <form>
+            <form method="POST" action="/register" enctype="multipart/form-data">
               <h2>Register</h2>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-            <input class="controls" type="password" name="correo" id="correo" placeholder="Confirmar Contraseña">
+              <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+              <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+              <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+              <input class="controls" type="password" name="correo" id="correo" placeholder="Confirmar Contraseña">
 
             <p><a href="#">Estoy de acuerdo con Terminos y Condiciones </a></p>
 
             <input class="botons" type="submit" value="Registrar">
             <p><a href="#">¿Ya tengo Cuenta?</a></p>
-          </section>
-        </form>
+             </form>
       </main>
 
         <%- include('./partials/footer') %>
