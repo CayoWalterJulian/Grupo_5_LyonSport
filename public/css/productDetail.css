@@ -24,6 +24,7 @@ label{
 }
 .margen{
     margin-left: 4%;
+    margin-top: 5%;
 }
 
 a{
@@ -196,10 +197,12 @@ span{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .comprar button:hover{
-    background-color: #f8be09;
+    color: #f8be09;
+    border-color: black;
 }
 .anhadirCarrito button:hover{
-    background-color: #f8be09;
+    color: #f8be09;
+    border-color: black;
 }
 .envio{
     margin-top: 20px;
@@ -237,10 +240,22 @@ span{
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
+    margin-bottom: 3%;
 }
 .recomendaciones img{
     width: 400px;
+}
+.recomendados{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+    background-color: #f6f6f6;
+}
+.recomendados a{
+    flex-direction: row;
+}
+.similar-bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ---------------------------------------- */

@@ -14,7 +14,13 @@
         "similar3": "/images/React/perfil.webp",
         "similar1link": "DM9537-002",
         "similar2link": "DN3687-003",
-        "similar3link": "DH5392-003"
+        "similar3link": "DH5392-003",
+        "similar1name": "Nike Air Max SYSTM",
+        "similar2name": "Jordan Max Aura 4",
+        "similar3name": "Nike React Infinity Run Flyknit 3",
+        "similar1price": "$53.999",
+        "similar2price": "$71.999",
+        "similar3price": "$89.999"
     },
     {
         "id": "DM9537-002",
@@ -31,7 +37,13 @@
         "similar3": "/images/React/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DN3687-003",
-        "similar3link": "DH5392-003"
+        "similar3link": "DH5392-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Jordan Max Aura 4",
+        "similar3name": "Nike React Infinity Run Flyknit 3",
+        "similar1price": "$66.999",
+        "similar2price": "$71.999",
+        "similar3price": "$89.999"
     },
     {
         "id": "DN3687-003",
@@ -51,7 +63,13 @@
         "similar3link": "DH5392-003",
         "color1": "/images/Jordan/color1.webp",
         "color2": "/images/Jordan/color2.webp",
-        "color3": "/images/Jordan/color3.webp"
+        "color3": "/images/Jordan/color3.webp",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Nike React Infinity Run Flyknit 3",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$89.999"
     },
     {
         "id": "DH5392-003",
@@ -68,7 +86,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DV9217-325",
@@ -85,7 +109,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DJ3644-010",
@@ -102,7 +132,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DV9994-015",
@@ -119,7 +155,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "CU5353-010",
@@ -136,7 +178,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DV1734-100",
@@ -153,7 +201,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "FD2764-001",
@@ -170,7 +224,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DV3183-001",
@@ -187,7 +247,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "CU4495-016",
@@ -204,7 +270,13 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     },
     {
         "id": "DH4072-001",
@@ -221,6 +293,12 @@
         "similar3": "/images/jordan/perfil.webp",
         "similar1link": "DV0804-200",
         "similar2link": "DM9537-002",
-        "similar3link": "DN3687-003"
+        "similar3link": "DN3687-003",
+        "similar1name": "Nike Air Force",
+        "similar2name": "Nike Air Max SYSTM",
+        "similar3name": "Jordan Max Aura 4",
+        "similar1price": "$66.999",
+        "similar2price": "$53.999",
+        "similar3price": "$71.999"
     }
 ]
