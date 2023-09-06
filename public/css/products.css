@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: flex-center; 
+    align-items: flex-center; 
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.contenedor{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productContainer{
+    max-width: 25rem;
+    min-width: 25rem;
+}
+.cardContainer{
+    max-width: 24rem;
+    margin: 10px;
+    background-color: #f6f6f6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.cardContainer img{
+    max-width: 100%;
+}
