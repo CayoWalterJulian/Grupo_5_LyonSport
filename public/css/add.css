@@ -40,8 +40,11 @@ input {
     color: #ffffff;
     font-size: 16px;
 }
-
+#back{
+    cursor: pointer;
+}
 #boton{
+   cursor: pointer;
    position: relative;
    left: 90px;
 }
