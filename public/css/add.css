@@ -30,6 +30,7 @@ form h2 {
 }
 
 input {
+    text-align: center;
     padding: 17px;
     border-radius: 25px;
     background-color: transparent;
@@ -39,12 +40,13 @@ input {
     color: #ffffff;
     font-size: 16px;
 }
+
+#boton{
+   position: relative;
+   left: 90px;
+}
 #boton2{
     visibility: hidden;
-}
-#boton{
-    position: relative;
-    left: 25%;
 }
 #titulo1{
     color: #ffffff;

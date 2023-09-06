@@ -30,6 +30,7 @@ form h2 {
 }
 
 input {
+    text-align: center;
     padding: 17px;
     border-radius: 25px;
     background-color: transparent;
@@ -41,11 +42,11 @@ input {
 }
 #boton{
     visibility: hidden;
-}
-#boton2{
-    position: relative;
-    right: 25%;
-}
+ }
+ #boton2{ 
+     position: relative;
+     right: 73px;
+ }
 #titulo1{
     visibility: hidden;
 }
