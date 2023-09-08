@@ -52,22 +52,22 @@ Javier: Implementar crud en los productos, agregar ejemplo de vista en el carrit
 Luis: Seguir buscando mas modelos en paginas grandes y tratar de adaptar alguna a nuestra pagina y hacerla mas eficientes.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Weekly 
+Weekly 08 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
-Javier: 
-Luis: 
+Julian: Complete mi tarea de poder agregar productos, hace una base con nombre users.json y agregar manera de volver desde el agregar y editar.
+Javier: Cree la vista de productos, implemente un metodo para poder editar los pruductos ya existentes y agregue un ejemplo de como se veria el carrito con un producto
+Luis: Se busco mas informacion para hacer la parte que se me asigno para poder elaborar "Como usario quiero eliminar .."
 
 ● Si se encontró con algún impedimento:
-Julian: 
-Javier: 
-Luis: 
+Julian: Comprender la logica CRUD
+Javier: Si, a la hora de implementar una forma para poder editar los productos
+Luis: La busqueda de contenidos necesarios para aplicar lo que se me asigno 
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: 
-Luis: 
+Julian: Agregar cambios del proyecto hasta la asignacion del siguiente sprint.
+Javier: Mejorar css y agregar pequeñas funcionalidades esteticas en la pagina
+Luis: Reorganizar rutas y controladores de nuestra pagina
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Weekly 
