@@ -1,5 +1,6 @@
 const products = require('../data/products.json')
-
+const fs = require('fs')
+const path = require('path')
 
 const productDetail = (req,res) => {
     const { id } = req.params;
@@ -16,13 +17,12 @@ const productosTotal = (req, res) => {
 }
 
 const deleteProduct = (req, res) => {
-    let id = req.params.id;
-    products = products.filter((item) => item.id != id)
-    fs.writeFileSync(
-    path.join(__dirname, "/products.json"),
-    JSON.stringify(products, null, 4),
-    );
-    res.redirect("/");
+    const productId = +req.params.id
+
+    const productTmp = products.filter((c) => c.id !== productId)
+    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), JSON.stringify(productTmp))
+    
+    res.redirect('/products');
     }
 
 module.exports= {

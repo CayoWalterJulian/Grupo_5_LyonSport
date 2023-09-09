@@ -9,8 +9,7 @@ const methodOverride = require("method-override")
 const app = express();
 const PORT = 3000;
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use (express.static("public"))
 app.use(methodOverride("_method"))
 app.set("view engine" , "ejs")
