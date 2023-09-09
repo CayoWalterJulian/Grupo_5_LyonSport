@@ -2,9 +2,6 @@ const products = require("../data/products.json")
 const fs = require("fs")
 const path = require("path")
 
-const products = require('../data/products.json')
-const fs = require('fs')
-const path = require('path')
 
 const editView = (req,res)=>{
     let id = req.params.id
@@ -13,6 +10,7 @@ const editView = (req,res)=>{
     
     res.render("edit", { product })
 }
+
 const edit = (req,res) => {
     req.body.id = req.params.id;
     let productoUpdate = products.map(pdto =>{
@@ -26,9 +24,11 @@ const edit = (req,res) => {
 
     res.redirect('/products')
 }
+
 const add = (req,res)=>{
     res.render("add")
 }
+
 const create = (req,res)=>{
     const product = req.body;
     product.id = new Date().getTime()
@@ -37,7 +37,7 @@ const create = (req,res)=>{
     
     products.push(product);
 
-    fs.writeFileSync(path.resolve(__dirname, "../data/products.json"), JSON.stringify(products))
+    fs.writeFileSync(path.resolve(__dirname, "../data/products.json"), JSON.stringify(products,null,2))
 
     res.redirect("/products")
 }

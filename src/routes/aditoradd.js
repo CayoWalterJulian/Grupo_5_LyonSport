@@ -1,7 +1,4 @@
-const express = require("express");
-const {edit, add} = require("../controller/aditoradd");
-const multer = require("multer");
-
+const express = require('express')
 const editoradd = express.Router();
 
 const {edit,
@@ -20,6 +17,7 @@ editoradd.put('/edit/:id', edit)
 
 
 editoradd.post("/products", create)
+
 
 module.exports = {
     editoradd
