@@ -118,19 +118,35 @@
         <h1 class="margen">Productos similares:</h1>
         <div class="recomendaciones">
             
+            
             <div class="recomendados">
                 <a href="<%= product.similar1link %>">
-                    <img src="<%= product.similar1 %>" alt="">
+                    <img src="<%= product.similar1 %>" alt="<%= product.similar1name %>">
+                    <div class="similar-bottom">
+                        <p><%= product.similar1name %></p>
+                        <p style="color: green;"><%= product.similar1price %></p>
+                    </div>
+
                 </a>
             </div>
             <div class="recomendados">
                 <a href="<%= product.similar2link %>">
-                    <img src="<%= product.similar2 %>" alt="">
+                    <img src="<%= product.similar2 %>" alt="<%= product.similar1name %>">
+                    <div class="similar-bottom">
+                        <p><%= product.similar2name %></p>
+                        <p style="color: green;"><%= product.similar2price %></p>
+                    </div>
+
                 </a>
             </div>
             <div class="recomendados">
                 <a href="<%= product.similar3link %>">
-                    <img src="<%= product.similar3 %>" alt="">
+                    <img src="<%= product.similar3 %>" alt="<%= product.similar1name %>">
+                    <div class="similar-bottom">
+                        <p><%= product.similar3name %></p>
+                        <p style="color: green;"><%= product.similar3price %></p>
+                    </div>
+
                 </a>
             </div>
         </div>
