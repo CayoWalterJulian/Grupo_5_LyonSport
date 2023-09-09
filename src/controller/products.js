@@ -15,7 +15,18 @@ const productosTotal = (req, res) => {
 
 }
 
+const deleteProduct = (req, res) => {
+    let id = req.params.id;
+    products = products.filter((item) => item.id != id)
+    fs.writeFileSync(
+    path.join(__dirname, "/products.json"),
+    JSON.stringify(products, null, 4),
+    );
+    res.redirect("/");
+    }
+
 module.exports= {
     productDetail,
-    productosTotal
+    productosTotal,
+    deleteProduct
 }
