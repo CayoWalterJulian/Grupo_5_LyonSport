@@ -150,13 +150,10 @@
                 </a>
             </div>
         </div>
-                      <div> class="boton"
-                  <form method="post" action="/products/<%= products.id %>" >
-                  <button type="submit">
-                    borrar
-                  </button>
-                  </form>
-                      </div>
+        <div> class="boton"
+            <form method="POST" action="/<%=productsDetail.id%>?_method=DELETE">
+                <button type="submit">ELIMINAR</button>
+            </form>
     </main>
 
 
