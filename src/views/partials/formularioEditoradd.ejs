@@ -2,14 +2,19 @@
         <h1 id="titulo1">Creando producto</h1>
         <h1 id="titulo2">Editando producto</h1>
         <form method="post" action="/products">
-                <input type="text" id="producto" name="name_product" required placeholder="Nombre del producto">
-                <input type="text" id="descripcion" name="description" required placeholder="Detalles del producto">
-                <input type="file" name="imagen" id="imgProducto" required value="ingrese imagen">
-                <input type="text" id="taller" name="size" required placeholder="Seleccione el talle">
-                <input type="text" id="color" name="color" required placeholder="Colores disponible">
                 <input type="number" id="precio" name="price" required placeholder="Precio del producto">
-                <div><a href="/products"><input type="button" id="boton" value="Crear producto"></a>
-                <a href="/products"><input type="button" id="boton2" value="Modificar producto"></a></div>
+                <input type="text" id="producto" name="name" required placeholder="Nombre del producto">
+                <input type="file" name="centralImage" id="imgProducto" value="ingrese imagen principal" >
+
+                <% for (let i = 1 ; i < 5 ; i++) {%>
+                <input type="file" name="imageAngle<%=i%>" value="ingrese vistas">
+                <% } %>
+
+                <input type="text" id="taller" name="size" placeholder="Seleccione el talle">
+                <input type="text" id="color" name="color" placeholder="Colores disponible">
+                
+                <div><input type="submit" id="boton" value="Crear producto"></a>
+                <input type="submit" id="boton2" value="Modificar producto"></div>
 
                 <a href="/"><input id="back" type="button" value="Volver a Inicio"></a>
         </form>
