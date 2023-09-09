@@ -1,11 +1,35 @@
-const edit = (req,res)=>{
-    res.render("edit")
+const products = require('../data/products.json')
+const fs = require('fs')
+const path = require('path')
+
+const editView = (req,res)=>{
+    let id = req.params.id
+
+    const product = products.find(p => p.id === id)
+    
+    res.render("edit", { product })
+}
+const edit = (req,res) => {
+    req.body.id = req.params.id;
+    let productoUpdate = products.map(pdto =>{
+        if(pdto.id == req.body.id){
+            return pdto = req.body;
+        }
+        return pdto;
+    })
+    let productoActualizar = JSON.stringify(productoUpdate,null,2);
+    fs.writeFileSync(path.resolve(__dirname,'../data/products.json'),productoActualizar)
+
+    res.redirect('/products')
 }
 const add = (req,res)=>{
     res.render("add")
 }
 
+
+
 module.exports= {
     edit,
-    add
+    add,
+    editView
 }

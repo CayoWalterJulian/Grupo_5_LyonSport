@@ -1,12 +1,16 @@
 const express = require("express");
-const {edit, add} = require("../controller/aditoradd");
+const {editView,edit , add} = require("../controller/aditoradd");
+const multer = require("multer")
 
 
 const editoradd = express.Router();
 
-editoradd.get("/edit", edit)
-
 editoradd.get("/add", add)
+
+
+editoradd.get("/edit/:id", editView)
+editoradd.put('/edit/:id', edit)
+
 
 module.exports = {
     editoradd
