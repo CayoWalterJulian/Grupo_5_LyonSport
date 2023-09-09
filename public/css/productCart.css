@@ -32,6 +32,12 @@ a{
 button:hover{
     cursor: pointer;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Puede ser necesario agregar esto para algunos navegadores */
+}
 /* ---------------------------------------- */
 /* Ajustes a Header */
 /* ---------------------------------------- */
@@ -112,6 +118,29 @@ main{
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
 }
+.carritoCard{
+    width: 95%;
+    height: 25%;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.imgCard{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.imgCard img{
+    width: 100%;
+}
+.cantidadCard input{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
 .resumen{
     background-color: white;
     height: 300px;
@@ -119,6 +148,20 @@ main{
     margin-left: 5%;
     text-align: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.resumen button{
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #ebebeb;
+    border: solid 2px ;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.resumen button:hover{
+    color: #f8be09;
+border-color: black;
 }
 .resumen h3{
     margin-top: 10px;
