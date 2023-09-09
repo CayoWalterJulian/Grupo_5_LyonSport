@@ -74,3 +74,6 @@ input, button {
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
 }
+.none{
+    display: none;
+}

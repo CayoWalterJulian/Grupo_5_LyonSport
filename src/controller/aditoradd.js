@@ -13,16 +13,26 @@ const editView = (req,res)=>{
 
 const edit = (req,res) => {
     req.body.id = req.params.id;
-    let productoUpdate = products.map(pdto =>{
-        if(pdto.id == req.body.id){
-            return pdto = req.body;
-        }
-        return pdto;
-    })
-    let productoActualizar = JSON.stringify(productoUpdate,null,2);
-    fs.writeFileSync(path.resolve(__dirname,'../data/products.json'),productoActualizar)
 
-    res.redirect('/products')
+    const productsData = fs.readFileSync(path.resolve(__dirname, '../data/products.json'));
+    const products = JSON.parse(productsData);
+
+    const productoAEditar = products.find(pdto => pdto.id == req.body.id);
+
+    // Actualiza solo los campos proporcionados en req.body, manteniendo el valor predeterminado si no se proporciona
+    Object.keys(req.body).forEach(key => {
+        if (req.body[key] !== undefined) {
+            productoAEditar[key] = req.body[key];
+        }
+    });
+
+
+    const productoActualizar = JSON.stringify(products, null, 2);
+
+
+    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoActualizar);
+
+    res.redirect('/products');
 }
 
 const add = (req,res)=>{
