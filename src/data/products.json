@@ -277,28 +277,5 @@
     "similar1price": "66.999",
     "similar2price": "53.999",
     "similar3price": "71.999"
-  },
-  {
-    "id": "DH4072-001",
-    "code": "DH4072-001",
-    "price": "79.999",
-    "name": "Nike Air Zoom Pegasus 39",
-    "centralImage": "/images/zoom/central.webp",
-    "imageAngle1": "/images/zoom/central.webp",
-    "imageAngle2": "/images/zoom/angle1.webp",
-    "imageAngle3": "/images/zoom/angle2.webp",
-    "imageAngle4": "/images/zoom/angle3.webp",
-    "similar1": "/images/AirForce/perfil.webp",
-    "similar2": "/images/AirMax/perfil.webp",
-    "similar3": "/images/jordan/perfil.webp",
-    "similar1link": "DV0804-200",
-    "similar2link": "DM9537-002",
-    "similar3link": "DN3687-003",
-    "similar1name": "Nike Air Force",
-    "similar2name": "Nike Air Max SYSTM",
-    "similar3name": "Jordan Max Aura 4",
-    "similar1price": "66.999",
-    "similar2price": "53.999",
-    "similar3price": "71.999"
   }
 ]
