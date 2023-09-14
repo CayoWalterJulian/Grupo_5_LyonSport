@@ -10,13 +10,12 @@ const {edit,
 
 
 admin.get("/add", add)
-
+admin.post("/products", create)
 
 admin.get("/edit/:id", editView)
 admin.put('/edit/:id', edit)
 
 
-admin.post("/products", create)
 
 
 module.exports = {

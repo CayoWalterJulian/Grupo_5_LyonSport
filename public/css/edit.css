@@ -23,12 +23,6 @@ form {
     text-align: center;
 }
 
-form h2 {
-    font-size: 30px;
-    color: #edf0f0;
-    margin-bottom: 35px;
-}
-
 input, button {
     text-align: center;
     padding: 17px;
@@ -43,25 +37,11 @@ input, button {
 #back{
     cursor: pointer;
 }
-#boton{
-    visibility: hidden;
- }
- #boton2{ 
-    cursor: pointer;
-     position: relative;
-     right: 73px;
- }
-#titulo1{
-    visibility: hidden;
-}
-#titulo2{
+
+#titulo{
     color: #ffffff;
-    position: relative;
-    bottom: 35px;
-    left: 50px;
-}
-::placeholder {
-    color: #898798;
+    text-align: center;
+    margin: 30px;
 }
 
 .btn, button {
@@ -73,7 +53,4 @@ input, button {
 .btn:hover {
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
-}
-.none{
-    display: none;
 }
