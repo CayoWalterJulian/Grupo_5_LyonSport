@@ -17,7 +17,7 @@ const productosTotal = (req, res) => {
 }
 
 const deleteProduct = (req, res) => {
-    const productId = +req.params.id
+    const productId = req.params.id
 
     const productTmp = products.filter((c) => c.id !== productId)
     fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), JSON.stringify(productTmp))

@@ -13,8 +13,23 @@
         </style>
     </head>
 <body>
+    <main>
+        <h1 id="titulo">Creando producto</h1>
+        <form method="post" action="/products">
+                <input type="text" id="producto" name="name" required placeholder="Nombre del producto">
+                <input type="number" id="precio" name="price" required placeholder="Precio del producto">
+                <input type="file" name="centralImage" id="imgProducto" placeholder="ingrese imagen principal" >
 
-    <%- include('./partials/formularioEditoradd') %>
+                <% for (let i = 1 ; i < 5 ; i++) {%>
+                <input type="file" name="imageAngle<%=i%>" value="ingrese vistas">
+                <% } %>
+                
+                <input type="text" id="taller" name="size" placeholder="Seleccione el talle">
 
+                <div><input type="submit" id="boton" value="Crear producto">
+                    <br>
+                <a href="/"><input href="/" id="boton" type="button" value="Volver a Inicio"></a></div>
+        </form>
+</main>
 </body>
 </html>
