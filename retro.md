@@ -57,3 +57,28 @@ Hacer menos:
 Dejar de hacer:
 -
 -------------------------------------------------------------------
+
+
+Sprint 5
+-------------------------------------------------------------------
+Comenzar a hacer:
+-
+
+
+Hacer más: 
+Pedir ayuda a los profesores con los problemas que nos surjen.
+
+
+
+Continuar haciendo:
+Estar pendiente del proyecto.
+
+
+Hacer menos:
+Confiarse con los tiempos de entrega.
+
+
+Dejar de hacer:
+-
+
+-------------------------------------------------------------------
