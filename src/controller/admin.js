@@ -26,9 +26,7 @@ const edit = (req,res) => {
         }
     });
 
-
     const productoActualizar = JSON.stringify(products, null, 2);
-
 
     fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoActualizar);
 
@@ -41,9 +39,9 @@ const add = (req,res)=>{
 
 const create = (req,res)=>{
     const product = req.body;
-    product.id = new Date().getTime()
-    product.code = new Date().getTime() 
-    product.price = +product.price;
+    product.id = new Date().getTime().toString()
+    product.code = new Date().getTime().toString()
+    
     
     products.push(product);
 

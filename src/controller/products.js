@@ -25,6 +25,8 @@ const deleteProduct = (req, res) => {
     res.redirect('/products');
     }
 
+
+    
 module.exports= {
     productDetail,
     productosTotal,

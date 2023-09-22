@@ -1,4 +1,5 @@
 const express = require("express");
+const multer = require("multer")
 const { indexController, productCart, registerController, loginController } = require("../controller");
 
 const router = express.Router();
@@ -7,7 +8,7 @@ router.get("/", indexController)
 
 router.get("/carrito", productCart)
 
-const multer = require("multer")
+
 
 const multerDiskStorage =multer.diskStorage({
     destination: (req,res,callback) => {
