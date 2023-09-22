@@ -1,4 +1,4 @@
-const products = require('../data/products.json')
+let products = require('../data/products.json')
 const fs = require('fs')
 const path = require('path')
 
@@ -17,10 +17,10 @@ const productosTotal = (req, res) => {
 }
 
 const deleteProduct = (req, res) => {
-    const productId = req.params.id
+    let productId = req.params.id
 
-    const productTmp = products.filter((c) => c.id !== productId)
-    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), JSON.stringify(productTmp))
+    products = products.filter((c) => c.id !== productId)
+    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), JSON.stringify(products,null, 2))
     
     res.redirect('/products');
     }
@@ -32,3 +32,5 @@ module.exports= {
     productosTotal,
     deleteProduct
 }
+
+// fs.unlinkSync

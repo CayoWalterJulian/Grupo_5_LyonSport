@@ -70,22 +70,22 @@ Javier: Mejorar css y agregar pequeñas funcionalidades esteticas en la pagina
 Luis: Reorganizar rutas y controladores de nuestra pagina
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Weekly 
+Weekly 16 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
-Javier: 
-Luis: 
+Julian: Se soliciono crear productos, intente cargar las files a través del programa.
+Javier: Estudiar para arreglar errores
+Luis: Se busco información en clases anteriores para posteriormente empezar con el Sprint 5
 
 ● Si se encontró con algún impedimento:
-Julian: 
-Javier: 
-Luis: 
+Julian: Errores que no hallabas la causa.
+Javier: Errores teoricos y practicos.
+Luis: Ninguno.
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: 
-Luis: 
+Julian: Tratar de resolver los problemas presentes y empezar a hacer las tareas actuales.
+Javier: Seguir estudiando y hacer mi parte del proyecto.
+Luis: Tengo planeado seguir buscando información y apartir de mañana empezar.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Weekly 
