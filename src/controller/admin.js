@@ -38,9 +38,17 @@ const add = (req,res)=>{
 }
 
 const create = (req,res)=>{
-    const product = req.body;
-    product.id = new Date().getTime().toString()
-    product.code = new Date().getTime().toString()
+    const product = {
+        "id":new Date().getTime().toString(),
+        "code":new Date().getTime().toString(),
+        "price": req.body.price,
+        "name": req.body.name,
+        "centralImage": "/images/nuevosproductos/"+req.file.filename,
+      /*    "imageAngle1": "/images/nuevosproductos/"+req.file.filename+"1",
+      "imageAngle2": "/images/nuevosproductos/"+req.file.filename+"2",
+        "imageAngle3": "/images/nuevosproductos/"+req.file.filename+"3",
+        "imageAngle4": "/images/nuevosproductos/"+req.file.filename+"4"*/
+    }
     
     
     products.push(product);

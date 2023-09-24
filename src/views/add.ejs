@@ -18,11 +18,8 @@
         <form method="POST" action="/products" enctype="multipart/form-data">
                 <input type="text" id="producto" name="name" required placeholder="Nombre del producto">
                 <input type="number" id="precio" name="price" required placeholder="Precio del producto">
-                <input type="file" id="imgProducto" name="centralImage" required placeholder="ingrese imagen principal" >
-
-                <% for (let i = 1 ; i < 5 ; i++) {%>
-                <input type="file" name="imageAngle<%=i%>" value="ingrese angulos distintos">
-                <% } %>
+                <input name="centralImage" type="file" id="imgProducto" required >
+                <input type="file" name="imageAngle" multiple>
                 
                 <input type="text" id="taller" name="size" placeholder="Seleccione el talle">
 

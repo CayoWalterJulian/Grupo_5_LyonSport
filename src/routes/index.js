@@ -28,6 +28,7 @@ router.post("/register", registerController.create)
 
 router.get("/login", loginController)
 
+router.post("/logout", loginController)
 
 module.exports = {
     router
