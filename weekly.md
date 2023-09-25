@@ -92,18 +92,18 @@ Weekly
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
 Julian: 
-Javier: 
-Luis: 
+Javier: Trate de implementar cambios de multer en edit y delete
+Luis:  Me puse a investigar mas acerca de la funcion de recordar al usuario el logueo en una pagina.
 
 ● Si se encontró con algún impedimento:
 Julian: 
-Javier: 
-Luis: 
+Javier: Si, con el cambio de de las imagenes en el json
+Luis: Tuve muchas dudas acerca del tema de este Sprint, aún me quedan unas cuantas pero nada complicado por momento.
 
 ● Qué va a hacer los dias siguientes:
 Julian: 
-Javier: 
-Luis: 
+Javier: Seguir tratando de arreglar los errores y hacer mi parte del sprint
+Luis: Tengo planteado poder arrancar mañana con la consigna de recordar al usuario.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Weekly 
