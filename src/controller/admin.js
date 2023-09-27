@@ -13,19 +13,23 @@ const editView = (req,res)=>{
 
 const edit = (req,res) => {
     req.body.id = req.params.id;
+    let file = req.file;
 
     const productsData = fs.readFileSync(path.resolve(__dirname, '../data/products.json'));
     const products = JSON.parse(productsData);
 
     const productoAEditar = products.find(pdto => pdto.id == req.body.id);
 
+
     // Actualiza solo los campos proporcionados en req.body, manteniendo el valor predeterminado si no se proporciona
     Object.keys(req.body).forEach(key => {
         if (req.body[key] !== undefined) {
             productoAEditar[key] = req.body[key];
         }
-    });
+    }); 
 
+    products.centralImage = `images/products/${file.filename}`
+        
     const productoActualizar = JSON.stringify(products, null, 2);
 
     fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoActualizar);
