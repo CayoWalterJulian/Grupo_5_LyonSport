@@ -91,18 +91,18 @@ Luis: Tengo planeado seguir buscando información y apartir de mañana empezar.
 Weekly 24 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
-Javier: Trate de implementar cambios de multer en edit y delete
+Julian: Intento solucioinar el problema de añadir imagenes al producto y implemento posibles vistas de usuario.
+Javier: Trate de implementar cambios de multer en edit y delete.
 Luis:  Me puse a investigar mas acerca de la funcion de recordar al usuario el logueo en una pagina.
 
 ● Si se encontró con algún impedimento:
-Julian: 
-Javier: Si, con el cambio de de las imagenes en el json
+Julian: El comprendimiento de las funciones.
+Javier: Si, con el cambio de de las imagenes en el json.
 Luis: Tuve muchas dudas acerca del tema de este Sprint, aún me quedan unas cuantas pero nada complicado por momento.
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: Seguir tratando de arreglar los errores y hacer mi parte del sprint
+Julian: implementar los las vistas de usuario login o invitado.
+Javier: Seguir tratando de arreglar los errores y hacer mi parte del sprint.
 Luis: Tengo planteado poder arrancar mañana con la consigna de recordar al usuario.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
