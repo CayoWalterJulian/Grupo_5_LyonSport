@@ -1,19 +1,8 @@
 [
-    {
-        "Identificador": "id",
-        "Nombre": "firstName",
-        "Apellido": "lastName",
-        "Email": "email",
-        "Contraseña": "password",
-        "Categoría": "category",
-        "Imagen": "image"
-    },{
-        "Identificador": "id",
-        "Nombre": "firstName",
-        "Apellido": "lastName",
-        "Email": "email",
-        "Contraseña": "password",
-        "Categoría": "category",
-        "Imagen": "image"
-    }
+ {
+  "id": 1,
+  "name": "kane",
+  "email": "kane@test.com",
+  "password": "password"
+ }
 ]

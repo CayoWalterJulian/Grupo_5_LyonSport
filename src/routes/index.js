@@ -1,6 +1,7 @@
 const express = require("express");
 const multer = require("multer")
-const { indexController, productCart, registerController, loginController } = require("../controller");
+const { indexController, productCart, registerController, loginController, registerView } = require("../controller");
+const { check } = require('express-validator');
 
 const router = express.Router();
 
@@ -22,9 +23,9 @@ const multerDiskStorage =multer.diskStorage({
 })
 
 
-router.get("/register", registerController.inicio)
+router.get("/register", registerView)
 
-router.post("/register", registerController.create)
+router.post("/users", registerController)
 
 router.get("/login", loginController)
 

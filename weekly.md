@@ -89,7 +89,6 @@ Luis: Tengo planeado seguir buscando información y apartir de mañana empezar.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Weekly 24 Septiembre
-Weekly 24 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
 Julian: 
@@ -111,16 +110,16 @@ Weekly
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
 Julian: 
-Javier: 
+Javier: Implemente morgan y express validator. Implemente el registro de usuarios.
 Luis: 
 
 ● Si se encontró con algún impedimento:
 Julian: 
-Javier: 
+Javier: Ninguno
 Luis: 
 
 ● Qué va a hacer los dias siguientes:
 Julian: 
-Javier: 
+Javier: Arreglar errores del crud, modificar el css y reorganizar archivos
 Luis: 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

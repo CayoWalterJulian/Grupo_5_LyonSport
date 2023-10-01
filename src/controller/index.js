@@ -1,3 +1,7 @@
+const User = require('../models/User')
+const fs = require('fs')
+const path = require("path")
+
 const indexController = (req,res)=>{
     res.render("index")
 }
@@ -15,18 +19,12 @@ const loginController = (req,res)=>{
     req.session.destroy()
     res.redirect("/")
 }*/
-const registerController = {
-    /*if (req.session.isUserLogger){
-        return res.redirect("/")
-    }*/
-    "inicio" : function(req,res){
-        res.render("register")
-    },
-    "create" : function(req,res){
-        res.render("estoy")
-
-        res.redirect("/")
-    }
+const registerController = (req, res) =>{
+    User.create(req.body)
+    res.redirect('/register')
+}
+const registerView = (req, res) => {
+    res.render('register')
 }
 
 
@@ -34,5 +32,6 @@ module.exports= {
     indexController,
     productCart,
     registerController,
-    loginController
+    loginController,
+    registerView
 }
