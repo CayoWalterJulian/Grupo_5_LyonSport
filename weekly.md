@@ -91,35 +91,35 @@ Luis: Tengo planeado seguir buscando información y apartir de mañana empezar.
 Weekly 24 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
+Julian: Se agregaron posibles soluciones de tareas de user y se arreglaron problemas de cargar imagen.
 Javier: Trate de implementar cambios de multer en edit y delete
 Luis:  Me puse a investigar mas acerca de la funcion de recordar al usuario el logueo en una pagina.
 
 ● Si se encontró con algún impedimento:
-Julian: 
+Julian: En cuanto al entendimiento de logica.
 Javier: Si, con el cambio de de las imagenes en el json
 Luis: Tuve muchas dudas acerca del tema de este Sprint, aún me quedan unas cuantas pero nada complicado por momento.
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
+Julian: Ordenar y arreglar algunas vistas.
 Javier: Seguir tratando de arreglar los errores y hacer mi parte del sprint
 Luis: Tengo planteado poder arrancar mañana con la consigna de recordar al usuario.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Weekly 
+Weekly 01 Octubre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
+Julian: se organizo y se modificaron algunas vistas.
 Javier: Implemente morgan y express validator. Implemente el registro de usuarios.
 Luis: 
 
 ● Si se encontró con algún impedimento:
-Julian: 
-Javier: Ninguno
+Julian: Ninguno
+Javier: Si, con la implementacion de  multer.
 Luis: 
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
+Julian: Implementar las posiblessoluciones de tareas de trello.
 Javier: Arreglar errores del crud, modificar el css y reorganizar archivos
 Luis: 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
