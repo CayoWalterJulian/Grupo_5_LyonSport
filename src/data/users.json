@@ -4,5 +4,27 @@
   "name": "kane",
   "email": "kane@test.com",
   "password": "password"
+ },
+ {
+  "id": 2,
+  "name": "javier",
+  "email": "martin@gmail.com",
+  "password": "$2a$10$ky2PWpGnsz1Ma61.Jh1aGeLCRGzeE1zqOJVI3iluaI9H6DiX0E9eW",
+  "terminosYCondiciones": "on"
+ },
+ {
+  "id": 3,
+  "name": "javier",
+  "email": "martin@si.com",
+  "password": "$2a$10$RUUWsMFBr3x9DHhJiyb0OuRoTVj8y1yfKoIjk93FagEEvnv1bwdPC",
+  "terminosYCondiciones": "on"
+ },
+ {
+  "id": 4,
+  "name": "javierconimagen",
+  "email": "jaavis@gmail.com",
+  "password": "$2a$10$68dFyptOR4KjZDD.witY5.TQiDeyCn9lwjecqhPY7tybUcIr3SNB6",
+  "terminosYCondiciones": "on",
+  "profileimg": "1696259464604_img.jpg"
  }
 ]

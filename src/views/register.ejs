@@ -14,22 +14,37 @@
         <%- include('./partials/header') %>
         
         <main>
-            <form action="/users" method="POST">
+            <form action="/register" method="POST" enctype="multipart/form-data">
               <h2>Register</h2>
               <label for="name">Ingrese su Nombre</label>
-              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" required>
-
+              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%= locals.oldData ? oldData.name : null %>" required>
+              <% if (locals.errors && errors.name) { %>
+                <%= errors.name.msg %>
+              <% } %>
 
               <label for="email">Ingrese su correo</label>
-              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" required>
+              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" value="<%= locals.oldData ? oldData.email : null%>" required>
+              <% if (locals.errors && errors.email) { %>
+                <%= errors.email.msg %>
+              <% } %>
 
               <label for="password">Ingrese su Contraseña</label>
-              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" required>
+              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"  required>
+              <% if (locals.errors && errors.password) { %>
+                <%= errors.password.msg %>
+              <% } %>
+
+              <label for="profileimg">Imagen de perfil</label>
+              <input type="file" name="profileimg" id="" required>
+              <% if (locals.errors && errors.profileimg) { %>
+                <%= errors.profileimg.msg %>
+              <% } %>
 
               <div>
                 <input type="checkbox" name="terminosYCondiciones" required>
                 <label for="terminosYCondiciones">Acepto los terminos y condiciones</label>
               </div>
+
               <button class="botons" type="submit">Registrar</button>
             </form>
 

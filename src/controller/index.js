@@ -1,6 +1,9 @@
 const User = require('../models/User')
-const fs = require('fs')
-const path = require("path")
+const bcryptjs = require('bcryptjs')
+const{ validationResult } = require('express-validator')
+
+
+
 
 const indexController = (req,res)=>{
     res.render("index")
@@ -19,9 +22,51 @@ const loginController = (req,res)=>{
     req.session.destroy()
     res.redirect("/")
 }*/
-const registerController = (req, res) =>{
-    User.create(req.body)
-    res.redirect('/register')
+const registerController = {
+    register: (req, res) => {
+        return res.render('register')
+    },
+    
+    proccesRegister: (req, res) => {
+        const resultValidation = validationResult(req)
+
+        if (resultValidation.errors.length > 0) {
+            return res.render('register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
+        let userInDB = User.findByField('email', req.body.email)
+
+        if (userInDB) {
+            return res.render('register', {
+                errors:{
+                    email: {
+                        msg: 'Este email ya esta en uso'
+                    }
+                },
+                oldData: req.body
+            })
+        }
+    
+        let userToCreate = {
+            ...req.body,
+            profileimg: req.file.filename,
+            password: bcryptjs.hashSync(req.body.password, 10)
+            // avatar: req.file.filename
+        }
+        
+        User.create(userToCreate)
+        res.redirect('/register')
+    }
+}
+const registerontroller = (req, res) =>{
+
+
+    
+
+
+
 }
 const registerView = (req, res) => {
     res.render('register')
@@ -31,7 +76,6 @@ const registerView = (req, res) => {
 module.exports= {
     indexController,
     productCart,
-    registerController,
     loginController,
-    registerView
+    registerController
 }
