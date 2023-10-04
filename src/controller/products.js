@@ -19,10 +19,13 @@ const deleteProduct = (req, res) => {
     let id = req.params.id;
     products = products.filter((item) => item.id != id)
     fs.writeFileSync(
-    path.join(__dirname, "/products.json"),
+    path.join(__dirname, "/data/products.json"),
     JSON.stringify(products, null, 4),
+    {
+        encoding: "utf-8",
+    }
     );
-    res.redirect("/");
+    res.redirect("/products");
     }
 
 module.exports= {
