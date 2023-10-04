@@ -1,7 +1,6 @@
 const express = require('express');
 const { productDetail, productosTotal, deleteProduct } = require('../controller/products');
 
-
 const products = express.Router();
 
 

@@ -32,7 +32,7 @@ const deleteProduct = (req, res) => {
     fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), JSON.stringify(products,null, 2))
     
     res.redirect('/products');
-    }
+}
 
 
     
