@@ -70,56 +70,56 @@ Javier: Mejorar css y agregar pequeñas funcionalidades esteticas en la pagina
 Luis: Reorganizar rutas y controladores de nuestra pagina
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Weekly 
+Weekly 16 Septiembre
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ● Qué hizo esta semana:
-Julian: 
-Javier: 
+Julian: Se soliciono crear productos, intente cargar las files a través del programa.
+Javier: Estudiar para arreglar errores
+Luis: Se busco información en clases anteriores para posteriormente empezar con el Sprint 5
+
+● Si se encontró con algún impedimento:
+Julian: Errores que no hallabas la causa.
+Javier: Errores teoricos y practicos.
+Luis: Ninguno.
+
+● Qué va a hacer los dias siguientes:
+Julian: Tratar de resolver los problemas presentes y empezar a hacer las tareas actuales.
+Javier: Seguir estudiando y hacer mi parte del proyecto.
+Luis: Tengo planeado seguir buscando información y apartir de mañana empezar.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Weekly 24 Septiembre
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+● Qué hizo esta semana:
+Julian: Se agregaron posibles soluciones de tareas de user y se arreglaron problemas de cargar imagen.
+Javier: Trate de implementar cambios de multer en edit y delete
+Luis:  Me puse a investigar mas acerca de la funcion de recordar al usuario el logueo en una pagina.
+
+● Si se encontró con algún impedimento:
+Julian: En cuanto al entendimiento de logica.
+Javier: Si, con el cambio de de las imagenes en el json
+Luis: Tuve muchas dudas acerca del tema de este Sprint, aún me quedan unas cuantas pero nada complicado por momento.
+
+● Qué va a hacer los dias siguientes:
+Julian: Ordenar y arreglar algunas vistas.
+Javier: Seguir tratando de arreglar los errores y hacer mi parte del sprint
+Luis: Tengo planteado poder arrancar mañana con la consigna de recordar al usuario.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Weekly 01 Octubre
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+● Qué hizo esta semana:
+Julian: se organizo y se modificaron algunas vistas.
+Javier: Implemente morgan y express validator. Implemente el registro de usuarios.
 Luis: 
 
 ● Si se encontró con algún impedimento:
-Julian: 
-Javier: 
+Julian: Ninguno
+Javier: Si, con la implementacion de  multer.
 Luis: 
 
 ● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: 
-Luis: 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Weekly 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-● Qué hizo esta semana:
-Julian: 
-Javier: 
-Luis: 
-
-● Si se encontró con algún impedimento:
-Julian: 
-Javier: 
-Luis: 
-
-● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: 
-Luis: 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Weekly 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-● Qué hizo esta semana:
-Julian: 
-Javier: 
-Luis: 
-
-● Si se encontró con algún impedimento:
-Julian: 
-Javier: 
-Luis: 
-
-● Qué va a hacer los dias siguientes:
-Julian: 
-Javier: 
+Julian: Implementar las posiblessoluciones de tareas de trello.
+Javier: Arreglar errores del crud, modificar el css y reorganizar archivos
 Luis: 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

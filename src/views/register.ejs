@@ -14,18 +14,41 @@
         <%- include('./partials/header') %>
         
         <main>
-            <form method="POST" action="/register" enctype="multipart/form-data">
+            <form action="/register" method="POST" enctype="multipart/form-data">
               <h2>Register</h2>
-              <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-              <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-              <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-              <input class="controls" type="password" name="correo" id="correo" placeholder="Confirmar Contraseña">
+              <label for="name">Ingrese su Nombre</label>
+              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%= locals.oldData ? oldData.name : null %>" required>
+              <% if (locals.errors && errors.name) { %>
+                <%= errors.name.msg %>
+              <% } %>
 
-            <p><a href="#">Estoy de acuerdo con Terminos y Condiciones </a></p>
+              <label for="email">Ingrese su correo</label>
+              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" value="<%= locals.oldData ? oldData.email : null%>" required>
+              <% if (locals.errors && errors.email) { %>
+                <%= errors.email.msg %>
+              <% } %>
 
-            <input class="botons" type="submit" value="Registrar">
-            <p><a href="#">¿Ya tengo Cuenta?</a></p>
-             </form>
+              <label for="password">Ingrese su Contraseña</label>
+              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"  required>
+              <% if (locals.errors && errors.password) { %>
+                <%= errors.password.msg %>
+              <% } %>
+
+              <label for="profileimg">Imagen de perfil</label>
+              <input type="file" name="profileimg" id="" required>
+              <% if (locals.errors && errors.profileimg) { %>
+                <%= errors.profileimg.msg %>
+              <% } %>
+
+              <div>
+                <input type="checkbox" name="terminosYCondiciones" required>
+                <label for="terminosYCondiciones">Acepto los terminos y condiciones</label>
+              </div>
+
+              <button class="botons" type="submit">Registrar</button>
+            </form>
+
+             <p><a href="/login">Ya tengo Cuenta</a></p>
         </main>
 
         <%- include('./partials/footer') %>

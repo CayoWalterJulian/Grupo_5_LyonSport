@@ -1,5 +1,6 @@
-const products = require('../data/products.json')
-
+let products = require('../data/products.json')
+const fs = require('fs')
+const path = require('path')
 
 const productDetail = (req,res) => {
     const { id } = req.params;
@@ -19,13 +20,10 @@ const deleteProduct = (req, res) => {
     let id = req.params.id;
     products = products.filter((item) => item.id != id)
     fs.writeFileSync(
-    path.join(__dirname, "/data/products.json"),
+    path.join(__dirname, "/products.json"),
     JSON.stringify(products, null, 4),
-    {
-        encoding: "utf-8",
-    }
     );
-    res.redirect("/products");
+    res.redirect("/");
     }
 
 module.exports= {
@@ -33,3 +31,5 @@ module.exports= {
     productosTotal,
     deleteProduct
 }
+
+// fs.unlinkSync
