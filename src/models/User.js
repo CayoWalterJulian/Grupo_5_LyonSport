@@ -1,5 +1,4 @@
 const fs = require ('fs')
-const users = require("../data/users.json")
 
 
 const User = {
@@ -50,11 +49,6 @@ const User = {
         let finalUsers = allUsers.filter(oneUser => oneUser.id !== id)
         fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '))
         return true
-    },
-    getUserByEmail: (searchemail)=>{
-            return users.filter(
-              (email) => email.email === searchemail
-            )
     }
 }
 

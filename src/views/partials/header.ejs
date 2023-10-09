@@ -5,9 +5,17 @@
     </section>
     <section class="peticiones">
         <h6 class="buscador">Buscar productos<a href="/" class="lupa"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a><h6>
-        <a class="ingresar" href="/login"><i class="fa-solid fa-user"></i></a>
+        <% if (locals.isLogged) { %>
+            <p style="color: white;">Hola <%= locals.userLogged.name %></p>
+            <a href="/logout" style="color: white;">Logout</a>
+        <% } else { %>
+            <a class="ingresar" href="/login"><i class="fa-solid fa-user"></i></a>
+            
+        <% } %>
+
         <a class="deseos" href="/"><i class="fa-sharp fa-regular fa-heart"></i></a>
         <a class="carrito" href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+
         <!--<form action="/logout" method="post">
             <button type="submit">
                 logout
