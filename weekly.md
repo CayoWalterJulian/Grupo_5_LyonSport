@@ -123,3 +123,21 @@ Julian: Implementar las posiblessoluciones de tareas de trello.
 Javier: Arreglar errores del crud, modificar el css y reorganizar archivos
 Luis: 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Weekly 09 Octubre
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+● Qué hizo esta semana:
+Julian: Se intentaron solucionar problemas(fallando).
+Javier: Creacion de login, reorganizacion de carpetas, archivos e imagenes.
+Luis: Instale Bcrypt para la creación del login, logre hacer que me funcione la pagina con el login, sin embargo me faltaron mas cosas para concluir la creación del login.
+
+● Si se encontró con algún impedimento:
+Julian: El comprendimiento de algunas funciones, actuales como pasadas.
+Javier: Se encontro problema a la hora de reorganizar archivos y con multer
+Luis:  Concluir la creación del login.
+
+● Qué va a hacer los dias siguientes:
+Julian: Implementar crud en datebase y crear carpetas se sequelize.
+Javier: Completar tareas pendientes en el proyecto y prepararme para hacer el sprint
+Luis: Crear data.sql para probar la base de datos y crear Script de Estructura.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

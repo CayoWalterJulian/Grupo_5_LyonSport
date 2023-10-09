@@ -31,19 +31,16 @@ nav{
 .titulo h2{
     color: white;
 }
+#lupa{
+    position: relative;
+    right: 20px;
+    top: 8px;
+}
+.barra{
+   margin-bottom: 20px;
+}
 .logo{
     max-width: 80px;
-}
-.buscador{
-    color: #666;
-    background-color: white;
-    border: solid white 1px;
-    width: 25vw;
-    border-radius: 5px;
-}
-.lupa{
-    position: relative;
-    left: 2.5vw;
 }
 .ingresar{
     color:white;
@@ -59,7 +56,7 @@ nav{
 .deseos{
     color: white;
     font-size:medium;
-    margin: 5px;
+    margin: 10px;
 }
 .peticiones{
     width: 95%;

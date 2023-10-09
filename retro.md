@@ -82,3 +82,55 @@ Dejar de hacer:
 -
 
 -------------------------------------------------------------------
+
+
+Sprint 6
+-------------------------------------------------------------------
+Comenzar a hacer:
+Ponernos al dia con base de datos.
+
+
+Hacer más: 
+Consultar las dudas.
+
+
+
+Continuar haciendo:
+Seguir la comunicacion.
+
+
+
+Hacer menos:
+Confiarnos
+
+
+
+Dejar de hacer:
+-
+
+-------------------------------------------------------------------
+
+
+Sprint 
+-------------------------------------------------------------------
+Comenzar a hacer:
+-
+
+
+Hacer más: 
+
+
+
+
+Continuar haciendo:
+
+
+
+Hacer menos:
+
+
+
+Dejar de hacer:
+-
+
+-------------------------------------------------------------------
