@@ -56,10 +56,10 @@ const uploadFile = multer({ storage })
 
 
 router.get("/register", registerController.register)
-
 router.post("/register", uploadFile.single('profileimg'), validations, registerController.proccesRegister)
 
 router.get("/login", loginController)
+router.post("/login", loginController)
 
 router.post("/logout", loginController)
 
