@@ -65,7 +65,19 @@ a{
 a:hover{
     text-decoration:underline;
 }
-
+button{
+    padding: 20px 40px ;
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #f33f5a;
+    font-weight: 900;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #1b1d31;
+}
 label{
     color: white;
 }

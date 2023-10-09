@@ -27,12 +27,13 @@
                     <% } %>
 
                     <input type="password" id="contraseña" name="password" required placeholder="Ingresar Contraseña">
-                    <label for="interes">
-                        <input class="check" type="checkbox" name="remember" value="interes">¿Recordar cuenta?
+                    <label for="interes" class="remember">
+                        <input type="checkbox" name="remember" value="interes">¿Recordar cuenta?
                     </label>
                     <div class="botones">
-                    <input type="submit" id="boton" value="Ingresar">
-                    <a href="/register"><input type="button" id="boton2" value="Crear Cuenta"></a></div>
+                        <button type="submit">Ingresar</button>
+                    </div>
+                    <a href="/register" class="">Crear Cuenta</a>
             </form>
         </section>
     </main>

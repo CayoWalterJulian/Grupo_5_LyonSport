@@ -60,7 +60,10 @@ footer{
 footer a{
     color: white;
 }
-
+button:hover{
+    cursor: pointer;
+    background-color: #191929;
+}
 ::placeholder {
     color: #898798;
 }
@@ -119,8 +122,33 @@ footer a{
 .ingreso{
     margin: 50px;
 }
-
-
+.remember{
+    color: white;
+    display: flex;
+    margin: auto;
+}
+.remember input {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+}
+button{
+    padding: 20px 40px ;
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #f33f5a;
+    font-weight: 900;
+}
+a{
+    color: white;
+}
+.ingreso a:hover{
+    text-decoration: underline;
+}
 @media (max-width:991px) {
 
     body {

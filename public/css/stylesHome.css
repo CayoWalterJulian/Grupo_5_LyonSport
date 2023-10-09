@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +12,7 @@ body{
     font-family: 'Lora', serif;
 }
 main{
-    background-color: #7cdaf2;
+    background-color: rgb(224, 224, 224);
     padding-bottom:20px ; 
 }
 footer{
@@ -31,13 +33,15 @@ footer a{
 #boton{
     margin: 12px;
 }
-input{
+main input{
     cursor: pointer;
-
-    padding: 10px;
+    padding: 50px 200px;
     border-radius: 5px;
     border: #f6f6f6;
-    background-color: red;
+    font-size: 2em;
+    font-weight: 900;
+    background-color: black;
+    color: white;
 }
 a{
     color: black;
@@ -46,10 +50,6 @@ a{
 nav{
     display: flex;
 }
-.imgpage{
-    padding: 10px;
-}
-
 
 .cuadro{
     margin: 10px;

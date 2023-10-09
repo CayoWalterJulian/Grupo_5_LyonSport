@@ -23,8 +23,8 @@
     "similar3price": "89999"
   },
   {
-    "id": "DM9537-002",
-    "code": "DM9537-002",
+    "id": "2",
+    "code": "2",
     "price": "53999",
     "name": "Nike Air Max SYSTM",
     "centralImage": "/images/products/airmax-perfil.webp",
@@ -46,8 +46,8 @@
     "similar3price": "89999"
   },
   {
-    "id": "DN3687-003",
-    "code": "DN3687-003",
+    "id": "3",
+    "code": "3",
     "price": "71999",
     "name": "Jordan Max Aura 4",
     "centralImage": "/images/products/jordan-perfil.webp",
@@ -72,8 +72,8 @@
     "similar3price": "89999"
   },
   {
-    "id": "DH5392-003",
-    "code": "DH5392-003",
+    "id": "4",
+    "code": "4",
     "price": "89999",
     "name": "Nike React Infinity Run Flyknit 3",
     "centralImage": "/images/products/react-perfil.webp",
@@ -95,8 +95,8 @@
     "similar3price": "71999"
   },
   {
-    "id": "DV9217-325",
-    "code": "DV9217-325",
+    "id": "5",
+    "code": "5",
     "price": "91299",
     "name": "Nike ACG 'Oregon Series' Reissue",
     "centralImage": "/images/products/reissue-central.webp",
@@ -118,8 +118,8 @@
     "similar3price": "71999"
   },
   {
-    "id": "DJ3644-010",
-    "code": "DJ3644-010",
+    "id": "6",
+    "code": "6",
     "price": "27499",
     "name": "Nike ACG",
     "centralImage": "/images/products/acg-central.webp",
@@ -141,8 +141,8 @@
     "similar3price": "71999"
   },
   {
-    "id": "DV9994-015",
-    "code": "DV9994-015",
+    "id": "7",
+    "code": "7",
     "price": "37299",
     "name": "Nike Swoosh Phoenix",
     "centralImage": "/images/products/phoenix-central.webp",
@@ -164,8 +164,8 @@
     "similar3price": "71999"
   },
   {
-    "id": "CU5353-010",
-    "code": "CU5353-010",
+    "id": "8",
+    "code": "8",
     "price": "37299",
     "name": "Nike Run Stripe",
     "centralImage": "/images/products/stripe-central.webp",
@@ -187,8 +187,8 @@
     "similar3price": "71.999"
   },
   {
-    "id": "DV1734-100",
-    "code": "DV1734-100",
+    "id": "9",
+    "code": "9",
     "price": "93.499",
     "name": "Nike Air Max 90 SE",
     "centralImage": "/images/products/90-central.webp",
@@ -210,8 +210,8 @@
     "similar3price": "71.999"
   },
   {
-    "id": "FD2764-001",
-    "code": "FD2764-001",
+    "id": "10",
+    "code": "10",
     "price": "113.999",
     "name": "Flyknit Racer Next Nature",
     "centralImage": "/images/products/racer-central.webp",
@@ -233,8 +233,8 @@
     "similar3price": "71.999"
   },
   {
-    "id": "DV3183-001",
-    "code": "DV3183-001",
+    "id": "11",
+    "code": "11",
     "price": "35.999",
     "name": "Nike Revolution 6 NN JP",
     "centralImage": "/images/products/revolution-central.webp",
@@ -256,8 +256,8 @@
     "similar3price": "71.999"
   },
   {
-    "id": "CU4495-016",
-    "code": "CU4495-016",
+    "id": "12",
+    "code": "12",
     "price": "64.799",
     "name": "Nike Sportswear Tech Fleece",
     "centralImage": "/images/products/sportwear-central.webp",
