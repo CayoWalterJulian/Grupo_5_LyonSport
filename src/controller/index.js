@@ -1,6 +1,7 @@
 
 const bcryptjs = require('bcryptjs')
 const{ validationResult } = require('express-validator')
+const {getUserByEmail} = require("../models/User")
 
 
 
@@ -15,10 +16,6 @@ const productCart = (req,res) => {
 const loginController = (req,res)=>{
     const loginData =req.body;
     const user = getUserByEmail(loginData.email)
-    const passwordCorrect= bcryptjs.compareSync(loginData.password, user.password)
-    /*if (users[id].online == true){
-        return res.redirect("/")
-    }*/
     
     res.render("login")
     res.redirect("/")
