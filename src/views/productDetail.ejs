@@ -18,21 +18,21 @@
         <div class="topmain">
             <div class="otroAngulo">
                 <div class="angulos">
-                    <img src="<%= product.imageAngle1 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg' %>" alt="vista de perfil">
+                    <img src="/images/products/<%= product.imageAngle1 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg' %>" alt="vista de perfil">
                 </div>
                 <div class="angulos">
-                    <img src="<%= product.imageAngle2 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista desde abajo">
+                    <img src="/images/products/<%= product.imageAngle2 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista desde abajo">
                 </div>
                 <div class="angulos">
-                    <img src="<%= product.imageAngle3 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista desde arriba">
+                    <img src="/images/products/<%= product.imageAngle3 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista desde arriba">
                 </div>
                 <div class="angulos">
-                    <img src="<%= product.imageAngle4 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista en modelo">
+                    <img src="/images/products/<%= product.imageAngle4 || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista en modelo">
                 </div>
             </div>
             <div class="producto">
                 <div class="imgCentral">
-                    <img src="<%= product.centralImage || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista de perfil">
+                    <img src="/images/products/<%= product.centralImage || 'https://i.pinimg.com/originals/a1/3d/28/a13d2824e7dc14007cf4f35a9017989f.jpg'  %>" alt="vista de perfil">
                 </div>
             </div>
             <div class="detalles">
@@ -112,7 +112,7 @@
 
 
         <div class="colores">
-            <img src="<%= product.centralImage %>" alt="">
+            <img src="/images/products/<%= product.centralImage %>" alt="">
         </div>
 
         <h1 class="margen">Productos similares:</h1>
@@ -121,7 +121,7 @@
             
             <div class="recomendados">
                 <a href="<%= product.similar1link %>">
-                    <img src="<%= product.similar1 %>" alt="<%= product.similar1name %>">
+                    <img src="/images/products/<%= product.similar1 %>" alt="<%= product.similar1name %>">
                     <div class="similar-bottom">
                         <p><%= product.similar1name %></p>
                         <p style="color: green;">$<%= product.similar1price %></p>
@@ -131,7 +131,7 @@
             </div>
             <div class="recomendados">
                 <a href="<%= product.similar2link %>">
-                    <img src="<%= product.similar2 %>" alt="<%= product.similar1name %>">
+                    <img src="/images/products/<%= product.similar2 %>" alt="<%= product.similar1name %>">
                     <div class="similar-bottom">
                         <p><%= product.similar2name %></p>
                         <p style="color: green;">$<%= product.similar2price %></p>
@@ -141,7 +141,7 @@
             </div>
             <div class="recomendados">
                 <a href="<%= product.similar3link %>">
-                    <img src="<%= product.similar3 %>" alt="<%= product.similar1name %>">
+                    <img src="/images/products/<%= product.similar3 %>" alt="<%= product.similar1name %>">
                     <div class="similar-bottom">
                         <p><%= product.similar3name %></p>
                         <p style="color: green;">$<%= product.similar3price %></p>
