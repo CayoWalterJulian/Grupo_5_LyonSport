@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-form {
+main form {
     background-color: #24253c;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ form {
     text-align: center;
 }
 
-input, button {
+main input, button {
     text-align: center;
     padding: 17px;
     border-radius: 25px;

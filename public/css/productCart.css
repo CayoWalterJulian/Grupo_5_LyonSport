@@ -8,87 +8,37 @@
     box-sizing: border-box;
     font-family: 'Lora', serif;
 }
-h2{
+main h2{
     font-size: 2em;
     font-weight: 600;
     color: black;
 }
 
-p{
+main p{
     font-size: 1em;
     font-weight: 500;
     color: black;
 }
-label{
+main label{
     font-size: 1em;
     font-weight: 500;
 }
 
-a{
+main a{
     color: black;
     text-decoration: none;
 }
 
-button:hover{
+main button:hover{
     cursor: pointer;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+main input[type="number"]::-webkit-inner-spin-button,
+main input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     appearance: none;
-    margin: 0; /* Puede ser necesario agregar esto para algunos navegadores */
+    margin: 0; 
 }
-/* ---------------------------------------- */
-/* Ajustes a Header */
-/* ---------------------------------------- */
-header{
-    background-color: #f8be09;
- }
- 
- .titulo{
-     display: flex;
-     justify-content: flex-start;
-     width: 45%;
- }
- 
- .peticiones{
-     width: 95%;
-     display: flex;
-     justify-content: flex-end;
- }
- 
- .buscador{
-     color: #666;
-     background-color: white;
-     border: solid #666 1px;
-     width: 25vw;
-     border-radius: 5px;
- }
- .lupa{
-     position: relative;
-     left: 2.5vw;
- }
- .ingresar{
- 
-     font-size:medium;
-     width: 500px;
-     margin: 5px;
- }
- .carrito{
- 
-     font-size:medium;
-     margin: 5px;
- }
- .deseos{
- 
-     font-size:medium;
-     margin: 5px;
- }
- 
- .logo{
-     max-width: 80px;
- }
- /* ---------------------------------------- */
+
 
 /* Ajustes a Main */
 /* ---------------------------------------- */

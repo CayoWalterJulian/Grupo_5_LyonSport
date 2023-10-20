@@ -12,15 +12,11 @@ padding: 40px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #1b1d31;
 }
 
-header{
-    background-color: #f8be09;
-}
 
-form {
+main form {
     background-color: #24253c;
     display: flex;
     flex-direction: column;
@@ -30,14 +26,14 @@ form {
     text-align: center;
 }
 
-form h2 {
+main form h2 {
     font-size: 30px;
     color: #edf0f0;
     margin-bottom: 35px;
 }
 
 
-input {
+main input {
     padding: 17px;
     border-radius: 25px;
     background-color: transparent;
@@ -48,18 +44,6 @@ input {
     font-size: 16px;
 }
 
-footer{
-    border-top: solid 3px #ebebeb;
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-footer a{
-    color: white;
-}
 button:hover{
     cursor: pointer;
     background-color: #191929;
@@ -78,50 +62,7 @@ button:hover{
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
 }
-.peticiones{
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-}
-.titulo{
-    display: flex;
-    justify-content: flex-start;
-    width: 45%;
-}
-.logo{
-    max-width: 80px;
-}
-.buscador{
-    color: #666;
-    background-color: white;
-    border: solid #666 1px;
-    width: 25vw;
-    border-radius: 5px;
-}
-.lupa{
-    position: relative;
-    left: 1vw;
-    color: black;
-}
-.ingresar{
-    color: black;
-    font-size:medium;
-    width: 500px;
-    margin: 5px;
-}
-.carrito{
-    color: black;
-    font-size:medium;
-    margin: 5px;
-}
-.deseos{
-    color: black;
-    font-size:medium;
-    margin: 5px;
-}
-.ingreso{
-    margin: 50px;
-}
+
 .remember{
     color: white;
     display: flex;
@@ -134,7 +75,7 @@ button:hover{
     border: none;
     margin-right: 10px;
 }
-button{
+main button{
     padding: 20px 40px ;
     color: white;
     border-radius: 15px;
@@ -143,7 +84,7 @@ button{
     border: 2px solid #f33f5a;
     font-weight: 900;
 }
-a{
+main a{
     color: white;
 }
 .ingreso a:hover{
@@ -151,11 +92,11 @@ a{
 }
 @media (max-width:991px) {
 
-    body {
+    main body {
         padding: 30px;
     }
 
-    form {
+    main form {
         width: 340px;
     }
 }

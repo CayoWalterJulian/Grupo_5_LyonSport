@@ -12,15 +12,11 @@ padding: 40px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #1b1d31;
 }
 
-header{
-    background-color: #f8be09;
-}
 
-form {
+main form {
     background-color: #24253c;
     display: flex;
     flex-direction: column;
@@ -36,7 +32,7 @@ form h2 {
     margin-bottom: 35px;
 }
 
-input {
+main input {
     padding: 17px;
     border-radius: 25px;
     background-color: transparent;
@@ -47,25 +43,14 @@ input {
     font-size: 16px;
 }
 
-footer{
-    border-top: solid 3px #ebebeb;
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-footer a{
-    color: white;
-}
-a{
+
+main a{
     color: white;
 }
 a:hover{
     text-decoration:underline;
 }
-button{
+main button{
     padding: 20px 40px ;
     color: white;
     border-radius: 15px;
@@ -78,7 +63,7 @@ button:hover{
     cursor: pointer;
     background-color: #1b1d31;
 }
-label{
+main label{
     color: white;
 }
 ::placeholder {
@@ -95,47 +80,7 @@ label{
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
 }
-.peticiones{
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-}
-.titulo{
-    display: flex;
-    justify-content: flex-start;
-    width: 45%;
-}
-.logo{
-    max-width: 80px;
-}
-.buscador{
-    color: #666;
-    background-color: white;
-    border: solid #666 1px;
-    width: 25vw;
-    border-radius: 5px;
-}
-.lupa{
-    color: black;
-    position: relative;
-    left: 1vw;
-}
-.ingresar{
-    color: black;
-    font-size:medium;
-    width: 500px;
-    margin: 5px;
-}
-.carrito{
-    color: black;
-    font-size:medium;
-    margin: 5px;
-}
-.deseos{
-    color: black;
-    font-size:medium;
-    margin: 5px;
-}
+
 .ingreso{
     margin: 50px;
 }
@@ -143,11 +88,11 @@ label{
 
 @media (max-width:991px) {
 
-    body {
+    main body {
         padding: 30px;
     }
 
-    form {
+    main form {
         width: 340px;
     }
 }

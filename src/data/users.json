@@ -22,5 +22,13 @@
   "password": "$2a$10$/7VGlDCNHdh3ciEMN7bGvu0y0sahXE.zcBJyOIYCUpVR7iRtYS/Oi",
   "terminosYCondiciones": "on",
   "profileimg": "1696885218235_img.png"
+ },
+ {
+  "id": 4,
+  "name": "javier",
+  "email": "javier@test.com",
+  "password": "$2a$10$DcRKUNMHgxG31BtQxpUAU.y7vkFO/aFF1js24oa.d4vB4HFaZJkUW",
+  "terminosYCondiciones": "on",
+  "profileimg": "1697559129224_img.png"
  }
 ]

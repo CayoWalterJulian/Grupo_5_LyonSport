@@ -1,102 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-header{
-    background-color: black ;
-    padding-bottom: 25px;
-}
-footer{
-    padding-bottom: 60px;
-}
-footer a{
-    color: white;
-}
-header a{
-    color: black;
-    text-decoration: none;
-}
-nav{
-    display: flex;
-}
-.titulo{
-    display: flex;
-    justify-content: flex-start;
-    width: 45%;
-}
-.titulo h2{
-    color: white;
-}
-#lupa{
-    position: relative;
-    right: 20px;
-    top: 8px;
-}
-.barra{
-   margin-bottom: 20px;
-}
-.logo{
-    max-width: 80px;
-}
-.ingresar{
-    color:white;
-    font-size:medium;
-    width: 500px;
-    margin: 5px;
-}
-.carrito{
-    color: white;
-    font-size:medium;
-    margin: 5px;
-}
-.deseos{
-    color: white;
-    font-size:medium;
-    margin: 10px;
-}
-.peticiones{
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header a:hover, footer a:hover{
-    color: #f8be09;
-}
-.clickable:hover{
-    cursor: pointer;
+    font-family: 'Lora', serif;
 }
 
 footer{
-    border-top: solid 3px #f8f8f8;
+    border-top: solid 3px #ebebeb;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-@media (max-width: 483px){
-    footer{
-        display: block;
-    }
-    .buscador{
-        width: 130px;
-    }
-    .lupa{
-        left: 30px;
-    }
+footer, footer a{
+    color: white;
 }
-@media (min-width: 769px){
-    .buscador{
-        width: 140px;
+footer a:hover{
+    color: #f8be09;
+}
+header{
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header a, footer a {
+    text-decoration: none;
+}
+.titulo h2{
+    color: white;
+    font-size: 2em;
+}
+.titulo img{
+    min-width: 100px;
+    max-width: 100px;
+}
+.titulo{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo a{
+    font-size: 2em;
+    align-items: center;
+}
+.peticiones{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar{
+    position: relative;
+    min-width: 33%;
+    display: flex;
+}
+.barra{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.searchbar button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+    background-color: #f5f5f500;
+    border: 1px solid #cccccc00;
+    cursor: pointer;
+}
+.ingresar, .deseos, .carrito, .burguer-menu{
+    margin: 15px;
+    font-size: 1.5em;
+    color: white;
+}
+.burguer-menu{
+    display: none;
+}
+
+header a:hover, footer a:hover{
+    color: #f8be09;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media screen and (max-width: 767px){
+    
+    .burguer-menu{
+        display: flex;
     }
-    .lupa{
-        left: 40px;
+    .ingresar, .deseos, .carrito{
+        display: none;
     }
+    .peticiones{
+        order: 3;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .titulo{
+        order: 1;
+    }
+    .searchbar{
+        order: 2;
+        margin: 6px;
+    }
+    header{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .centrar{
+        margin: 15px;
+        border-bottom: 2px solid white;
+    }
+
 }

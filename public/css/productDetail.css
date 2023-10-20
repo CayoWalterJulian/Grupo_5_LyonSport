@@ -6,19 +6,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
     font-family: 'Lora', serif;
 }
-h2{
+main h2{
     font-size: 2em;
     font-weight: 600;
     color: black;
 }
-h3, p{
+main h3, main p{
     font-size: 1em;
     font-weight: 500;
     color: black;
 }
-label{
+main label{
     font-size: 1em;
     font-weight: 500;
 }
@@ -27,7 +29,7 @@ label{
     margin-top: 5%;
 }
 
-a{
+main a{
     color: black;
     text-decoration: none;
 }
@@ -38,56 +40,6 @@ button:hover{
 /* ---------------------------------------- */
 
 
-/* Ajustes a Header */
-/* ---------------------------------------- */
-header{
-   background-color: #f8be09;
-}
-
-.titulo{
-    display: flex;
-    justify-content: flex-start;
-    width: 45%;
-}
-
-.peticiones{
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.buscador{
-    color: #666;
-    background-color: white;
-    border: solid #666 1px;
-    width: 25vw;
-    border-radius: 5px;
-}
-.lupa{
-    position: relative;
-    left: 2.5vw;
-}
-.ingresar{
-
-    font-size:medium;
-    width: 500px;
-    margin: 5px;
-}
-.carrito{
-
-    font-size:medium;
-    margin: 5px;
-}
-.deseos{
-
-    font-size:medium;
-    margin: 5px;
-}
-
-.logo{
-    max-width: 80px;
-}
-/* ---------------------------------------- */
 
 
 
@@ -275,45 +227,9 @@ span{
 }
 /* ---------------------------------------- */
 
-/* Ajustes footer */
-/* ---------------------------------------- */
-footer{
-    border-top: solid 3px #ebebeb;
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-footer a{
-    color: white;
-}
-/* ---------------------------------------- */
-
 
 
 /* Media Queries */
 /* ---------------------------------------- */
-@media (max-width: 483px){
-    footer{
-        display: block;
-    }
-    .buscador{
-        width: 130px;
-    }
-    .lupa{
-        left: 30px;
-    }
-}
 
-
-@media (min-width: 769px){
-    .buscador{
-        width: 140px;
-    }
-    .lupa{
-        left: 40px;
-    }
-}
 /* ---------------------------------------- */
