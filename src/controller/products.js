@@ -1,35 +1,33 @@
-let products = require('../data/products.json')
 const fs = require('fs')
 const path = require('path')
+const db = require('../database/models')
+
 
 const productDetail = (req,res) => {
-    const { id } = req.params;
-    const product = products.find(p => p.id === id)
+    db.Product.findByPk(req.params.id,{
+        include: [{association: 'images'}]
+    })
+        .then((product) => {
+            res.render('productDetail', {product: product})
+        })
 
-    res.render('productDetail', {product})
 }
  
 
 const productosTotal = (req, res) => {
-
-    res.render('products', { products })
-
+    db.Product.findAll({
+        include: [{association: 'images'}]
+    })
+        .then(function(products){
+            return res.render('products', { products : products })
+        })
 }
 
-const deleteProduct = (req, res) => {
-    let id = req.params.id;
-    products = products.filter((item) => item.id != id)
-    fs.writeFileSync(
-    path.join(__dirname, "/products.json"),
-    JSON.stringify(products, null, 4),
-    );
-    res.redirect("/");
-    }
+
 
 module.exports= {
     productDetail,
-    productosTotal,
-    deleteProduct
+    productosTotal
 }
 
 // fs.unlinkSync

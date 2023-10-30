@@ -7,7 +7,8 @@ const upload = require("../middlewares/multerMid")
 const {edit,
     add,
     create,
-    editView} = require("../controller/admin");
+    editView,
+    deleteProduct} = require("../controller/admin");
 
 
 
@@ -19,11 +20,11 @@ admin.post("/products", upload.single('centralImage'), create)
 
 
 
-
-
 admin.get("/edit/:id", editView) 
 admin.put('/edit/:id', upload.single('centralImage'), edit)
 
+
+admin.delete("/products/:id", deleteProduct)
 
 
 module.exports = {

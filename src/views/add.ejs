@@ -18,11 +18,9 @@
         <form method="POST" action="/products" enctype="multipart/form-data">
                 <input type="text" id="producto" name="name" required placeholder="Nombre del producto">
                 <input type="number" id="precio" name="price" required placeholder="Precio del producto">
-                <input name="centralImage" type="file" id="imgProducto" required >
+                <input name="centralImage" type="file" id="imgProducto"  >
                 <input type="file" name="imageAngle" multiple>
                 
-                <input type="text" id="taller" name="size" placeholder="Seleccione el talle">
-
                 <div><input type="submit" id="boton" value="Crear producto">
                     <br>
                 <a href="/"><input href="/" id="boton" type="button" value="Volver a Inicio"></a></div>
