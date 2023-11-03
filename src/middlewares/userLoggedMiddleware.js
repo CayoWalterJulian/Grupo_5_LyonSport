@@ -1,4 +1,4 @@
-const User = require("../models/User")
+const User = require("../database/models/User")
 
 const userLoggedMiddleware = (req, res, next) => {
     res.locals.isLogged = false
@@ -17,6 +17,6 @@ const userLoggedMiddleware = (req, res, next) => {
     }
 
     next()
-}
+};
 
 module.exports = userLoggedMiddleware

@@ -3,7 +3,7 @@ const { router } = require("./routes/index");
 const { products } = require("./routes/products");
 const { users } = require("./routes/users")
 const { admin }= require("./routes/admin");
-// const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
+//const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 const methodOverride = require("method-override");
 const morgan = require('morgan');
 const session = require("express-session");
@@ -34,9 +34,8 @@ app.use(cookies())
 
 app.use(morgan('dev'));
 
-app.listen(PORT, () => {
-    console.log(`Su servidor corre en el puerto = ${PORT}`)
-});
+
+
 
 
 
@@ -45,7 +44,12 @@ app.use("/", router);
 
 app.use("/products", products);
 
-app.use("", users)
+app.use("/", users)
 
-app.use("", admin);
+app.use("/", admin);
 
+
+
+app.listen(PORT, () => {
+    console.log(`Su servidor corre en el puerto = ${PORT}`)
+});
