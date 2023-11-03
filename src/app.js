@@ -45,7 +45,7 @@ app.use("/", router);
 
 app.use("/products", products);
 
-// app.use("", users)
+app.use("", users)
 
 app.use("", admin);
 
