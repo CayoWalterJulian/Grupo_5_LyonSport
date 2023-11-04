@@ -55,7 +55,7 @@ users.get("/register", guestMiddleware, usersController.register)
 users.post("/register", uploadFile.single('profileimg'), validations, usersController.userToCreate)
 
 users.get('/login', guestMiddleware, usersController.login)
-users.post('/login', usersController.loginProcces)
+users.post('/login', usersController.loginProcess)
 
 users.get('/logout/', usersController.logout)
 
