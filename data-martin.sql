@@ -156,4 +156,4 @@ values(3, 'jordan-perfil.webp', 'Jordan Max Aura 4', '71999');
 
 
 insert into users(id, name, email, password, profile_img)
-values(1, 'kane', 'kane@test.com', 'si', '1696259161139_img.png' );
+values(1, 'Kane', 'kane@test.com', '$2a$10$pIsD75TjlP07PjmWafcMCew9/MnXeEWgNY1TiEBIG0qn8YxDCJ3/.', '1699487420939_img.png' );

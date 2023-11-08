@@ -39,8 +39,8 @@ const usersController = {
         db.User.create({
             name: req.body.name,
             email: req.body.email,
-            // password: bcryptjs.hashSync(req.body.password, 10),
-            password: req.body.password,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            // password: req.body.password,
             profile_img: req.file.filename
         });
         
@@ -56,10 +56,10 @@ const usersController = {
             .then(user => {
                 
                 if(user !== null) {
-                    // let passwordCompare = bcryptjs.compareSync(req.body.password, user.password)
-                    // if (passwordCompare) {
-                        if (req.body.password === user.password){
-                            req.session.userLogged = user
+                    let passwordCompare = bcryptjs.compareSync(req.body.password, user.password)
+                    if (passwordCompare) {
+                        // if (req.body.password === user.password){
+                        //     req.session.userLogged = user
                             
                             if(req.body.remember) {
                                 res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
