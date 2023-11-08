@@ -3,7 +3,7 @@ const { router } = require("./routes/index");
 const { products } = require("./routes/products");
 const { users } = require("./routes/users")
 const { admin }= require("./routes/admin");
-//const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 const methodOverride = require("method-override");
 const morgan = require('morgan');
 const session = require("express-session");
@@ -30,7 +30,7 @@ app.set("views", "./src/views");
 
 app.use(cookies())
 
-// app.use(userLoggedMiddleware)
+app.use(userLoggedMiddleware)
 
 app.use(morgan('dev'));
 

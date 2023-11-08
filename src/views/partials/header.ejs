@@ -10,14 +10,14 @@
         
 
     <div class="peticiones">
-        <div><% if (locals.isLogged) { %>
-            <a  href="/logout" style="color: white;"><input type="button" value="logout"></a>
-            <p style="color: white;">Hola <%= locals.userLogged.name %></p>
+        <div>
+            <a class="ingresar" href=<% if (locals.isLogged) { %>
+             <%= '/profile' %>
+            <% } else { %>
+                <%= '/login' %>
+                <% } %> ><i class="fa-solid fa-user"></i></a>
             
-        <% } else { %>
-            <a class="ingresar" href="/login"><i class="fa-solid fa-user"></i></a>
-            
-        <% } %></div>
+        </div>
         <a class="deseos" href="/"><i class="fa-sharp fa-regular fa-heart"></i></a>
         <a class="carrito" href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="" class="burguer-menu"><i class="fa-solid fa-bars"></i></a>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/footerHeader.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .profile {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <%- include("./partials/header")%>
+    
+    <main>
+        
+        <div class="profile">
+            <h2> Hola <%= user.name %> !</h2>
+            <img src="/images/profile-img/<%= user.profile_img  %>" alt="Imagen de perfil">
+            <p>Es un lindo dia verdad?</p>
+            <a href="/logout">Cerrar Sesion</a>
+        </div>
+
+    </main>
+
+
+    <%- include('./partials/footer') %>
+</body>
+</html>
