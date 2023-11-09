@@ -34,6 +34,9 @@ main input {
     color: #ffffff;
     font-size: 16px;
 }
+main label{
+    color: white;
+}
 #boton{
    cursor: pointer;
 }

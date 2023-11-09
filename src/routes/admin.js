@@ -1,8 +1,6 @@
 const express = require('express')
-const multer = require ("multer")
 const admin = express.Router();
-const path = require("path");
-const upload = require("../middlewares/multerMid")
+const upload = require("../middlewares/productMulterMiddleware")
 
 const {edit,
     add,
@@ -15,13 +13,23 @@ const {edit,
 
 
 admin.get("/add", add)
-admin.post("/products", upload.single('centralImage'), create)
+admin.post("/products", upload.fields([
+    { name: 'centralImage', maxCount: 1 },
+    { name: 'imageAngle1', maxCount: 1 },
+    { name: 'imageAngle2', maxCount: 1 },
+    { name: 'imageAngle3', maxCount: 1 }
+]), create)
 
 
 
 
 admin.get("/edit/:id", editView) 
-admin.put('/edit/:id', upload.single('centralImage'), edit)
+admin.put('/edit/:id', upload.fields([
+    { name: 'centralImage', maxCount: 1 },
+    { name: 'imageAngle1', maxCount: 1 },
+    { name: 'imageAngle2', maxCount: 1 },
+    { name: 'imageAngle3', maxCount: 1 }
+]), edit)
 
 
 admin.delete("/products/:id", deleteProduct)

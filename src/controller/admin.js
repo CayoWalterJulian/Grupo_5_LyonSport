@@ -11,32 +11,83 @@ const editView = (req,res)=>{
         })
 }
 
-const edit = (req, res) => {
-    db.Product.update({
-        price: req.body.price,
-        name: req.body.name,
-    },{
-        where:{
-            id: req.params.id
-        }
-    })
+const edit = async (req, res) => {
+    const t = await db.sequelize.transaction();
 
-    res.redirect("/products")
-}
+    try {
+        const product = await db.Product.findOne({
+            where: {
+                id: req.params.id
+            }
+        }, { transaction: t });
+
+        if (!product) {
+            throw new Error('Producto no encontrado');
+        }
+
+        await db.Product.update({
+            price: req.body.price,
+            name: req.body.name,
+        }, {
+            where: {
+                id: req.params.id
+            }
+        }, { transaction: t });
+
+        await db.Image.update({
+            central_image: req.files['centralImage'][0].filename,
+            image_angle1: req.files['imageAngle1'][0].filename,
+            image_angle2: req.files['imageAngle2'][0].filename,
+            image_angle3: req.files['imageAngle3'][0].filename
+        }, {
+            where: {
+                id: product.id_image
+            }
+        }, { transaction: t });
+
+        await t.commit();
+
+        res.redirect("/products");
+    } catch (error) {
+        await t.rollback();
+        res.status(500).send(error);
+    }
+};
+
 
 
 const add = (req,res)=>{
     res.render("add")
 }
 
-const create = (req,res)=>{
-    db.Product.create({
-        price: req.body.price,
-        name: req.body.name,
-    })
+const create = async (req, res) => {
+    const t = await db.sequelize.transaction();
 
-    res.redirect("/products")
-}
+    try {
+        const image = await db.Image.create({
+            central_image: req.files['centralImage'][0].filename,
+            image_angle1: req.files['imageAngle1'][0].filename,
+            image_angle2: req.files['imageAngle2'][0].filename,
+            image_angle3: req.files['imageAngle3'][0].filename
+        }, { transaction: t });
+
+        const product = await db.Product.create({
+            price: req.body.price,
+            name: req.body.name,
+            id_image: image.id
+        }, { transaction: t });
+
+        await t.commit();
+
+        res.redirect("/products");
+    } catch (error) {
+        await t.rollback();
+        res.status(500).send(error);
+    }
+};
+
+
+
 
 const deleteProduct = (req, res) => {
     db.Product.destroy({
