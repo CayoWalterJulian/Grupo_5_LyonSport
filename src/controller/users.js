@@ -12,13 +12,12 @@ const usersController = {
     processRegister: (req, res) => {
         const resultValidation = validationResult(req)
 
-        if (resultValidation.errors.length > 0) {
+        /*if (resultValidation.errors.length > 0) {
             return res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        }
-
+        } */
         db.User.findOne({ where: { email: req.body.email}})
             .then(error => {
                 if(error !== null){
@@ -77,12 +76,40 @@ const usersController = {
                 
             })
         
-    },
-        
+    }
+    ,    
     logout: (req, res) => {
         res.clearCookie('userEmail')
         req.session.destroy()
         return res.redirect('/')
+    }
+    ,
+    pageDeleteAccount:(req, res) => {
+        return res.render('deleteAccount')
+    },
+    deleteAccount:(req,res) => {
+        db.User.findOne({ where: { email: req.body.email}})
+            .then(user => {
+                
+                if(user !== null) {
+                    let passwordCompare = bcryptjs.compareSync(req.body.password, user.password)
+                    if (passwordCompare) {
+                        res.clearCookie('userEmail')
+                        req.session.destroy()
+                        db.User.destroy({
+                            
+                            where:{
+                                email: req.body.email,
+                            }
+                            
+                            
+                        })
+                        res.redirect("/profile")
+                    } else {
+                        res.redirect("/profile")
+                    }
+                }
+            })
     },
     profile: (req, res) => {
         res.render('profile', {
