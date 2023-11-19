@@ -111,15 +111,17 @@ Dejar de hacer:
 -------------------------------------------------------------------
 
 
-Sprint 
+Sprint 7
 -------------------------------------------------------------------
 Comenzar a hacer:
--
+-Dar prioridad a pequeños detalles.
+
 
 
 Hacer más: 
-
-
+-Comunicarnos en grupo.
+-Encontranos al pendiente de la fecha de entrega.
+-Estar al pendiente de las tareas de nuestro compañeros.
 
 
 Continuar haciendo:
@@ -131,6 +133,6 @@ Hacer menos:
 
 
 Dejar de hacer:
--
+-Confiarnos en cuento a las tareas asignadas.
 
 -------------------------------------------------------------------
