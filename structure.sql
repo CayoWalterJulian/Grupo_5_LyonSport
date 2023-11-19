@@ -51,7 +51,7 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 13
 DEFAULT CHARACTER SET = utf8mb4;
 
-CREATE INDEX `id_image` ON `lyonsport_db`.`products` (`id_image` ASC) VISIBLE;
+CREATE INDEX `id_image` ON `lyonsport_db`.`products` (`id_image` ASC);
 
 
 -- -----------------------------------------------------
@@ -84,9 +84,9 @@ CREATE TABLE IF NOT EXISTS `lyonsport_db`.`products_related` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-CREATE INDEX `id_product` ON `lyonsport_db`.`products_related` (`id_product` ASC) VISIBLE;
+CREATE INDEX `id_product` ON `lyonsport_db`.`products_related` (`id_product` ASC);
 
-CREATE INDEX `id_related` ON `lyonsport_db`.`products_related` (`id_related` ASC) VISIBLE;
+CREATE INDEX `id_related` ON `lyonsport_db`.`products_related` (`id_related` ASC);
 
 
 -- -----------------------------------------------------

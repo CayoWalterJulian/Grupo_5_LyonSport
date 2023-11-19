@@ -21,5 +21,8 @@ users.put('/userEdit', usersController.edit)
 
 users.get('/logout/', usersController.logout)
 
+users.get('/deleteAccount', usersController.pageDeleteAccount)
+users.post('/deleteAccount', usersController.deleteAccount)
+
 
 module.exports = { users }
