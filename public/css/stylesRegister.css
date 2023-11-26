@@ -14,6 +14,14 @@ padding: 40px;
 body {
     background-color: #1b1d31;
 }
+div.errores ul{
+    padding-left: 20px;
+    background-color:white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    visibility: hidden;
+}
 
 
 main form {
@@ -84,6 +92,7 @@ main label{
 .ingreso{
     margin: 50px;
 }
+
 
 
 @media (max-width:991px) {

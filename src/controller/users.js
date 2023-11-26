@@ -2,7 +2,6 @@ const bcryptjs = require('bcryptjs')
 const{ validationResult } = require('express-validator')
 const db = require('../database/models')
 
-
 const usersController = {
     
     register: (req, res) => {
@@ -12,12 +11,6 @@ const usersController = {
     processRegister: (req, res) => {
         const resultValidation = validationResult(req)
 
-        /*if (resultValidation.errors.length > 0) {
-            return res.render('register', {
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            })
-        } */
         db.User.findOne({ where: { email: req.body.email}})
             .then(error => {
                 if(error !== null){
@@ -31,11 +24,8 @@ const usersController = {
                     })
                 }
             }
-
             )
-
-
-        db.User.create({
+            db.User.create({
             name: req.body.name,
             email: req.body.email,
             password: bcryptjs.hashSync(req.body.password, 10),
@@ -62,7 +52,6 @@ const usersController = {
                             return res.redirect('/profile')
             
                         }
-
                     }else{
                     return res.render('login', {
                         errors:{
