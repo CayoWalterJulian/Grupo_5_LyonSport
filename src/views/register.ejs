@@ -14,8 +14,14 @@
         <%- include('./partials/header') %>
         
         <main>
-            <form action="/register" method="POST" enctype="multipart/form-data">
+          
+            <form action="/register" method="POST" enctype="multipart/form-data" class="register">
               <h2>Register</h2>
+          <div class="errores">
+            <ul>
+              
+            </ul>
+          </div>
               <label for="name">Ingrese su Nombre</label>
               <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%= locals.oldData ? oldData.name : null %>" required>
               <% if (locals.errors && errors.name) { %>
@@ -29,7 +35,7 @@
               <% } %>
 
               <label for="password">Ingrese su Contraseña</label>
-              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña"  required>
+              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" required>
               <% if (locals.errors && errors.password) { %>
                 <%= errors.password.msg %>
               <% } %>
@@ -48,11 +54,11 @@
               <button class="botons" type="submit">Registrar</button>
               <p><a href="/login">Ya tengo Cuenta</a></p>
             </form>
-
+            
 
         </main>
 
         <%- include('./partials/footer') %>
-
+        <script src="/js/validacionesR.js"></script>
        </body>
 </html>
