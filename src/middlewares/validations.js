@@ -27,19 +27,6 @@ const validations = [
                 throw new Error(`Las extensiones permitidas son: ${acceptedExtensions.join(', ')}`)
             }
         }
-    const loginVal = [  
-         let = document.querySelector('email'),
-         let = document.querySelector('Ingresar Contraseña'),
-    loginVal.focus(),
-        
-    loginVal.addEventListener('submit',(event) => {
-       if ('email' == '' || 'email' == null ||
-    'Ingresar Contraseña' == '' || 'Ingresar Contraseña' == null
-       )
-       
-    })
-
-    ]
         return true
     })
 ]
