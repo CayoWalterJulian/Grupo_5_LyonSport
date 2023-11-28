@@ -1,6 +1,7 @@
 const express = require('express')
 const admin = express.Router();
 const upload = require("../middlewares/productMulterMiddleware")
+const validations = require('../middlewares/adminValidations')
 
 const {edit,
     add,
@@ -13,7 +14,7 @@ const {edit,
 
 
 admin.get("/add", add)
-admin.post("/products", upload.fields([
+admin.post("/products", validations, upload.fields([
     { name: 'centralImage', maxCount: 1 },
     { name: 'imageAngle1', maxCount: 1 },
     { name: 'imageAngle2', maxCount: 1 },
@@ -24,7 +25,7 @@ admin.post("/products", upload.fields([
 
 
 admin.get("/edit/:id", editView) 
-admin.put('/edit/:id', upload.fields([
+admin.put('/edit/:id', validations, upload.fields([
     { name: 'centralImage', maxCount: 1 },
     { name: 'imageAngle1', maxCount: 1 },
     { name: 'imageAngle2', maxCount: 1 },

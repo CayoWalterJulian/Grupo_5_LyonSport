@@ -104,6 +104,13 @@ const usersController = {
         res.render('profile', {
             user: req.session.userLogged
         })
+    },
+
+    edit: (req, res) => {
+        db.User.findByPk(req.session.userLogged.id)
+            .then(data => {
+                
+            })
     }
 }
 
