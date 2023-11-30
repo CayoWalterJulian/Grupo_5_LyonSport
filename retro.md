@@ -136,3 +136,30 @@ Dejar de hacer:
 -Confiarnos en cuento a las tareas asignadas.
 
 -------------------------------------------------------------------
+
+
+Sprint 8
+-------------------------------------------------------------------
+Comenzar a hacer:
+-
+
+
+
+Hacer más: 
+-Tener en cuanta los detalles pendientes que se dejo a lo largo de la creacion del proyecto
+
+
+
+Continuar haciendo:
+-Seguir enfocándonos en realizar los punto asignados y cumplir el tiempo dado
+
+
+
+Hacer menos:
+-
+
+
+Dejar de hacer:
+-
+
+-------------------------------------------------------------------
