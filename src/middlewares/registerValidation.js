@@ -27,7 +27,6 @@ const validations = [
                 throw new Error(`Las extensiones permitidas son: ${acceptedExtensions.join(', ')}`)
             }
         }
-
         return true
     })
 ]
