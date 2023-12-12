@@ -39,7 +39,7 @@ app.use(morgan('dev'));
 
 app.use("/", router);
 
-app.use("/products", products);
+app.use("/", products);
 
 app.use("/", users)
 
