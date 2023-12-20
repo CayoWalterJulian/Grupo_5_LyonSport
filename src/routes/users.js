@@ -24,5 +24,7 @@ users.get('/logout/', usersController.logout)
 users.get('/deleteAccount', usersController.pageDeleteAccount)
 users.post('/deleteAccount', usersController.deleteAccount)
 
+users.get('/users/api', dataUsersApi)
+users.post('/users/api', dataUsersApi2)
 
 module.exports = { users }
