@@ -22,6 +22,22 @@ insert into products(id, price, name, id_image)
 values(11, 35999, 'Nike Revolution 6 NN JP', default);
 insert into products(id, price, name, id_image)
 values(12, 64799, 'Nike Sportswear Tech Fleece', default);
+insert into products(id, price, name, id_image)
+values(13, 200000, 'Air Jordan 1 Mid', default);
+insert into products(id, price, name, id_image)
+values(14, 10000, 'Nike Everyday Lightweight', default);
+insert into products(id, price, name, id_image)
+values(15, 30000, 'Nike Sportswear Club', default);
+insert into products(id, price, name, id_image)
+values(16, 64500, 'San Silencio 2023 Edition', default);
+insert into products(id, price, name, id_image)
+values(17, 50000, 'Nike Challenger', default);
+insert into products(id, price, name, id_image)
+values(18, 75500, 'Nike Epic Fast', default);
+insert into products(id, price, name, id_image)
+values(19, 47500, 'Nike Dri-FIT Tempo Race', default);
+insert into products(id, price, name, id_image)
+values(20, 35500, 'Nike Dri-FIT Academy', default);
 
 insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
 values(1, 'airforce-perfil.webp', 'airforce-abajo.webp', 'airforce-arriba.webp', 'airforce-modelo.webp');
@@ -47,6 +63,22 @@ insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
 values(11, 'revolution-central.webp', 'revolution-angle1.webp', 'revolution-angle2.webp', 'revolution-angle3.webp');
 insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
 values(12, 'sportwear-central.webp', 'sportwear-angle1.webp', 'sportwear-angle2.webp', 'sportwear-angle3.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(13, 'airjordan1mid.webp','airjordan1mid.webp','airjordan1mid.webp','airjordan1mid.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(14, 'nikeeverydaylightweight.webp','nikeeverydaylightweight.webp','nikeeverydaylightweight.webp','nikeeverydaylightweight.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(15, 'nikesportwearnegro.webp','nikesportwearnegro.webp','nikesportwearnegro.webp','nikesportwearnegro.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(16, 'sansilencio.webp', 'sansilencio.webp', 'sansilencio.webp', 'sansilencio.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(17, 'nikechallenger.webp','nikechallenger.webp', 'nikechallenger.webp', 'nikechallenger.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(18, 'nikecalzas.webp', 'nikecalzas.webp','nikecalzas.webp','nikecalzas.webp');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(19, 'nikepantaloncorto.webp', 'nikepantaloncorto.webp','nikepantaloncorto.webp','nikepantaloncorto');
+insert into images(id, central_image, image_angle1, image_angle2, image_angle3)
+values(20, 'nikedriftacademy.webp', 'nikedriftacademy.webp','nikedriftacademy.webp','nikedriftacademy.webp');
 
 
 UPDATE `lyonsport_db`.`products` SET `id_image` = '1' WHERE (`id` = '1');
@@ -61,6 +93,14 @@ UPDATE `lyonsport_db`.`products` SET `id_image` = '9' WHERE (`id` = '9');
 UPDATE `lyonsport_db`.`products` SET `id_image` = '10' WHERE (`id` = '10');
 UPDATE `lyonsport_db`.`products` SET `id_image` = '11' WHERE (`id` = '11');
 UPDATE `lyonsport_db`.`products` SET `id_image` = '12' WHERE (`id` = '12');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '13' WHERE (`id` = '13');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '14' WHERE (`id` = '14');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '15' WHERE (`id` = '15');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '16' WHERE (`id` = '16');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '17' WHERE (`id` = '17');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '18' WHERE (`id` = '18');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '19' WHERE (`id` = '19');
+UPDATE `lyonsport_db`.`products` SET `id_image` = '20' WHERE (`id` = '20');
 
 insert into related(id, image, name, price)
 values(1, 'airforce-perfil.webp', 'Nike Air Force', '66999');
@@ -157,3 +197,23 @@ values(3, 'jordan-perfil.webp', 'Jordan Max Aura 4', '71999');
 
 insert into users(id, name, email, password, profile_img)
 values(1, 'Kane', 'kane@test.com', '$2a$10$pIsD75TjlP07PjmWafcMCew9/MnXeEWgNY1TiEBIG0qn8YxDCJ3/.', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(2, 'laram', 'lara.molina@yopmail.com', '$2a$10$Pv.Hi5xMqK3F1JrfySFdEOd1HMEmUz3Z4PI6VH.hGIsXi9HF4R3Um', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(3, 'JuanPerez', 'juan.perez@outlook.com', '$2a$10$lBiBseWHsy7Ab8.U2K.CG.TLhny/17a.zwsY.qpirP0J/WDam8eZm', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(4, 'SofiLopez', 'sofia.lopez@gmail.com', '$2a$10$jeaKNu/3hzi7s8P1SRxKku4SK6upuYc4DrOG8kWrzoMfXyjv7X6/.', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(5, 'CarlosR', 'carlos.rodriguez@zoho.com', '$2a$10$jG25.si5F2PkEAubbSm7cubSTyRqqHmd5zliMw56IOYIARLS4wzfO', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(6, 'AnaG', 'ana.garcia@hotmail.com', '$2a$10$8EXIkW4PANXeRXRTMfAj5eSke7xXarWstIgyqQZwZk5i/FTkqCHqm', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(7, 'PedroS', 'pedro.sanchez@mail.com', '$2a$10$wgLZeA0/T6.6TVkCo8ZELuxH1fXayGmjVCWpugCxXxMG5ZOr2EPC2', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(8, 'MariaH', 'maria.hernandez@protonmail.com', '$2a$10$F45no1N9pcBDDtdn.9bSX.7jzcYNYtSoPrJV9fcolG4XTZnVLsdTq', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(9, 'LuisM', 'luis.martinez@yahoo.com', '$2a$10$r00b7hFMja016hAEV1qPjOXRdTngi.T26i4BjyNhwCoRl4ttjmnGm', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(10, 'LauraF', 'laura.fernandez@icloud.com', '$2a$10$ur9d5HW0ufpN9XlO7WUdFOg6xVddJtpLnHpjBXVgal.FUycju2VrS', '1699487420939_img.png' );
+insert into users(id, name, email, password, profile_img)
+values(11, 'JoseG', 'jose.gonzalez@aol.com', '$2a$10$luMCV8hKflek4FcN99dYr.fA4S1NrsSGqPZ61GvpGx7iHhj4vUAwe', '1699487420939_img.png' );

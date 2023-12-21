@@ -1,0 +1,21 @@
+.negro{
+    color: black;
+
+}
+.bg-negro{
+    background-color: black;
+}
+
+.side-bar-firme{
+    height: 100vh;
+}
+.fixed{
+    position: fixed;
+}
+
+.fs-1rem{
+    font-size: 1rem !important;
+}
+.fs-2rem{
+    font-size: 1.3rem !important;
+}
