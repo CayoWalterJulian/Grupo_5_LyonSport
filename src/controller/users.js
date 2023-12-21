@@ -113,18 +113,20 @@ const usersController = {
             })
     },
 
-        dataUsersApi : (req,res) => {
-        db.Users.findAll()
+    dataUsersApi : (req,res) => {
+        db.User.findAll()
         .then(users => {
             return res.status(200).json({
-                status: 200,   total: users.length,   data:users
+                status: 200,   
+                total: users.length,   
+                data:users
             })
         })
         
     },
     
-         dataUsersApi2 : (req,res) => {
-        db.Users.findByPk(req.params.id)
+    dataUsersApi2 : (req,res) => {
+        db.User.findByPk(req.params.id)
         .then(users => {
             return res.status(200).json({
                 status: 200,     data: users,   detail: ("http://localhost:3000/users/api"+users.id)
