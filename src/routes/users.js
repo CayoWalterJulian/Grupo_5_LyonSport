@@ -17,12 +17,15 @@ users.post("/register", uploadFile.single('profileimg'), validations, usersContr
 users.get('/login', guestMiddleware, usersController.login)
 users.post('/login', usersController.loginProcess)
 
-users.put('/userEdit', usersController.edit)
+users.get('/profile/userEdit/:id', usersController.viewEditProfile)
+users.post('/profile/userEdit/:id',uploadFile.single('profileimg'), validations, usersController.editProfile)
 
 users.get('/logout/', usersController.logout)
 
 users.get('/deleteAccount', usersController.pageDeleteAccount)
 users.post('/deleteAccount', usersController.deleteAccount)
 
+users.get('/users/api', usersController.dataUsersApi)
+users.get('/users/api/:id', usersController.dataUsersApi2)
 
 module.exports = { users }

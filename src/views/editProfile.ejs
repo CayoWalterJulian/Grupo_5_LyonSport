@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesRegister.css">
+        <link rel="stylesheet" href="/css/footerHeader.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+       <body>
+
+        <%- include('./partials/header') %>
+        
+        <main>
+          
+            <form action="/profile/userEdit/<%=user.id%>" method="POST" enctype="multipart/form-data" class="register">
+              <h2>Editar Perfil</h2>
+          <div class="errores">
+            <ul>
+              
+            </ul>
+          </div>
+              <label for="name">Ingrese su Nombre</label>
+              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%=user.name%>" required>
+              <% if (locals.errors && errors.name) { %>
+                <%= errors.name.msg %>
+              <% } %>
+
+              <label for="email">Ingrese su correo</label>
+              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" value="<%=user.email%>" required>
+              <% if (locals.errors && errors.email) { %>
+                <%= errors.email.msg %>
+              <% } %>
+
+              <label for="password">Ingrese su Contraseña</label>
+              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" value="<%=user.password%>" required>
+              <% if (locals.errors && errors.password) { %>
+                <%= errors.password.msg %>
+              <% } %>
+
+              <label for="profileimg">Imagen de perfil</label>
+              <input type="file" name="profileimg" id="" required>
+              <% if (locals.errors && errors.profileimg) { %>
+                <%= errors.profileimg.msg %>
+              <% } %>
+
+              <button class="botons" type="submit">Guardar</button>
+            </form>
+            
+
+        </main>
+
+        <%- include('./partials/footer') %>
+        <script src="/js/validacionesR.js"></script>
+       </body>
+</html>

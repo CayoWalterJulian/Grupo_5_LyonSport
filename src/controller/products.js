@@ -11,8 +11,7 @@ const productDetail = (req,res) => {
             res.render('productDetail', {product: product})
         })
 
-}
- 
+} 
 
 const productosTotal = (req, res) => {
     db.Product.findAll({
@@ -24,10 +23,37 @@ const productosTotal = (req, res) => {
 }
 
 
+const productsApi = (req,res) => {
+    db.Product.findAll()
+    .then(product => {
+        return res.status(200).json({
+            status: 200,
+            total: product.length,
+            data:product, 
+        })
+    })
+    
+}
+
+const productsApiDetail = (req,res) => {
+    db.Product.findByPk(req.params.id)
+    .then(product => {
+        return res.status(200).json({
+            status: 200,
+            data: product,
+            detail: ("http://localhost:3000/api/products/"+product.id)
+        })
+    })
+    
+}
+
+
 
 module.exports= {
     productDetail,
-    productosTotal
+    productosTotal,
+    productsApi,
+    productsApiDetail
 }
 
 // fs.unlinkSync
