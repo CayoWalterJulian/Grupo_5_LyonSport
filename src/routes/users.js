@@ -17,7 +17,8 @@ users.post("/register", uploadFile.single('profileimg'), validations, usersContr
 users.get('/login', guestMiddleware, usersController.login)
 users.post('/login', usersController.loginProcess)
 
-users.put('/userEdit', usersController.edit)
+users.get('/profile/userEdit/:id', usersController.viewEditProfile)
+users.post('/profile/userEdit/:id',uploadFile.single('profileimg'), validations, usersController.editProfile)
 
 users.get('/logout/', usersController.logout)
 

@@ -106,11 +106,27 @@ const usersController = {
         })
     },
 
-    edit: (req, res) => {
-        db.User.findByPk(req.session.userLogged.id)
-            .then(data => {
-                
-            })
+    viewEditProfile: (req, res)=> {
+        db.User.findByPk(req.params.id)
+        .then(user => {
+        res.render('editProfile', {user:user})
+    })}
+    ,
+
+
+    editProfile: (req, res) => {    
+                db.User.update({
+                    name: req.body.name,
+                    email: req.body.email,
+                    password: bcryptjs.hashSync(req.body.password, 10),
+                    profile_img: req.file.filename
+                }, {
+                    where: {
+                        id: req.params.id
+                    }
+                })
+                res.redirect("/profile")
+            
     },
 
     dataUsersApi : (req,res) => {
