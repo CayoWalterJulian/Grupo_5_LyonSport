@@ -129,7 +129,7 @@ const usersController = {
         db.User.findByPk(req.params.id)
         .then(users => {
             return res.status(200).json({
-                status: 200,     data: users,   detail: ("http://localhost:3000/users/api"+users.id)
+                status: 200,     data: users
         })
     })
    },
