@@ -23,31 +23,31 @@
             </ul>
           </div>
               <label for="name">Ingrese su Nombre</label>
-              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%= locals.oldData ? oldData.name : null %>" required>
+              <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre" value="<%= locals.oldData ? oldData.name : null %>" >
               <% if (locals.errors && errors.name) { %>
                 <%= errors.name.msg %>
               <% } %>
 
               <label for="email">Ingrese su correo</label>
-              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" value="<%= locals.oldData ? oldData.email : null%>" required>
+              <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo" value="<%= locals.oldData ? oldData.email : null%>" >
               <% if (locals.errors && errors.email) { %>
                 <%= errors.email.msg %>
               <% } %>
 
               <label for="password">Ingrese su Contraseña</label>
-              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" required>
+              <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" >
               <% if (locals.errors && errors.password) { %>
                 <%= errors.password.msg %>
               <% } %>
 
               <label for="profileimg">Imagen de perfil</label>
-              <input type="file" name="profileimg" id="" required>
+              <input type="file" name="profileimg" id="" >
               <% if (locals.errors && errors.profileimg) { %>
                 <%= errors.profileimg.msg %>
               <% } %>
 
               <div>
-                <input type="checkbox" name="terminosYCondiciones" required>
+                <input type="checkbox" name="terminosYCondiciones" >
                 <label for="terminosYCondiciones">Acepto los terminos y condiciones</label>
               </div>
 
