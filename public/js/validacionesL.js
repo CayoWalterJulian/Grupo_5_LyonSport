@@ -1,31 +1,38 @@
-window.addEventListener("load", function(){
-    var formulario = document.querySelector("form.login")
-    var ulErrores = document.querySelector("div.errores ul")
-    var botonSubmit = document.querySelector(".botonn")
-    formulario.addEventListener("submit", function(z){
+window.addEventListener('vLogin', function() {
+    const mistakes = document.querySelector("form.login")
+    const bSubmit = document.querySelector("button")
+    const vErrores = document.querySelector("errors")
 
-        const errores = []
-        let campoName = document.querySelector("inputt#nombre");
-        if (campoName.value == ""){
-            errores.push ("el campo nombre no debe estar vacio")
-        } else if (campoName.value.lengt < 3){
-            errores.push ("Su nombre debe tener al menos 3 caracteres")
-        }
+            mistakes.addEventListener('submit', function(p) {
+               evento.preventDefault();
+               mistakes.innerHTML = ""
+      
+            let campoMail = document.querySelector('input.Email');
+                if (campoMail.value = ""){
+                mistakes.push("El campo no puede estar vacio")
+                }
+                    else if (campoMail.value){
+                    mistakes.push("El campo debe contener @")
+                    }
+    
+            let campoContraseña = document.querySelector('input.password')
+                if (campoContraseña.value = ""){
+                    mistakes.push("el campo no puede estar vacio")}
+    
+                    else if (campoContraseña.value.length < 4){
+                    mistakes.push("el campo debe tener mas de 4 caracteres")
+                }
+            
+                if (mistakes.length > 0){
+                    error.preventDefault();
+                    for (let i = 0; i < vErrores.length; i++) {
+                        vErrores.innerHTML += <li>"Los campos no pueden estar vacios"</li>
+                    }}
 
-        let campoEmail = document.querySelector("inputt#mail");
-        if (campoEmail.value == ""){
-            errores.push ("No puede estar vacio su Email vacio")
-        }
-
-        if (errores.length > 0){
-            z.preventDefault();
-            for (let i = 0; i < errores.length; i++) {
-                ulErrores.innerHTML += "<li>"+ errores[i] +"</li>"
-            }
-        }
-
-})
-    botonSubmit.addEventListener("click", function () {
-        ulErrores.style.visibility = "visible";
-    })
-})
+            })
+    
+            bSubmit.addEventListener("click", function () {
+                mistakes.style.visibility = "visible";
+    
+            })
+      })

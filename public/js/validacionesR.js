@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     let botonSubmit = document.querySelector(".botons")
 
     formulario.addEventListener("submit", function(e){
-
+        ulErrores.innerHTML = ""
         let errores = []
         let campoName = document.querySelector("input#name");
         if (campoName.value == ""){
