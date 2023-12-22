@@ -15,7 +15,7 @@ body {
     background-color: #1b1d31;
 }
 
-div.errores{
+div.errores ul{
     padding-left: 20px;
     background-color:white;
     color: red;

@@ -5,17 +5,19 @@ window.addEventListener("load", function(){
 
     formulario.addEventListener("submit", function(e){
         ulErrores.innerHTML = ""
+
         let errores = []
+        
         let campoName = document.querySelector("input#name");
         if (campoName.value == ""){
             errores.push ("el campo nombre no debe estar vacio")
-        } else if (campoName.value.lengt < 3){
+        } else if (campoName.value.length < 3){
             errores.push ("Su nombre debe tener al menos 3 caracteres")
         }
 
         let campoEmail = document.querySelector("input#email");
         if (campoEmail.value == ""){
-            errores.push ("No puede estar vacio su e-mail vacio")
+            errores.push ("Ingrese su email completo")
         }
 
         let campoPassword = document.querySelector("input#password");
@@ -25,12 +27,17 @@ window.addEventListener("load", function(){
             errores.push ("Su contraseña debe tener mas de 8 caracteres")
         }
 
+        let campoImagen = document.querySelector("input#file");
+        if (campoImagen.value == ""){
+            errores.push ("Agregue una foto de perfil")
+        }
+
         if (errores.length > 0){
             e.preventDefault();
             for (let i = 0; i < errores.length; i++) {
                 ulErrores.innerHTML += "<li>"+ errores[i] +"</li>"
             }
-        }
+        } 
 
 })
     botonSubmit.addEventListener("click", function () {
