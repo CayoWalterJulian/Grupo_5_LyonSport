@@ -30,7 +30,7 @@ main form {
     flex-direction: column;
     padding: 50px;
     width: 420px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgb(245, 244, 244);
     text-align: center;
 }
 

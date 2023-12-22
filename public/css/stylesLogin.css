@@ -15,6 +15,14 @@ body {
     background-color: #1b1d31;
 }
 
+div.errores{
+    padding-left: 20px;
+    background-color:white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    visibility: hidden;
+}
 
 main form {
     background-color: #24253c;
@@ -22,9 +30,10 @@ main form {
     flex-direction: column;
     padding: 50px;
     width: 420px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgb(253, 251, 251);
     text-align: center;
 }
+
 
 main form h2 {
     font-size: 30px;
