@@ -1,38 +1,41 @@
-window.addEventListener('vLogin', function() {
-    const mistakes = document.querySelector("form.login")
-    const bSubmit = document.querySelector("button")
-    const vErrores = document.querySelector("errors")
+window.addEventListener('load', function() {
+    let formulario = document.querySelector("form.login")
+    let bSubmit = document.querySelector(".botons")
+    let ulErrores = document.querySelector("div.errores ul")
 
-            mistakes.addEventListener('submit', function(p) {
-               evento.preventDefault();
-               mistakes.innerHTML = ""
-      
-            let campoMail = document.querySelector('input.Email');
-                if (campoMail.value = ""){
-                mistakes.push("El campo no puede estar vacio")
-                }
-                    else if (campoMail.value){
-                    mistakes.push("El campo debe contener @")
-                    }
-    
-            let campoContraseña = document.querySelector('input.password')
-                if (campoContraseña.value = ""){
-                    mistakes.push("el campo no puede estar vacio")}
-    
-                    else if (campoContraseña.value.length < 4){
-                    mistakes.push("el campo debe tener mas de 4 caracteres")
-                }
+
+
+    formulario.addEventListener('submit', function(e) {
+                ulErrores.innerHTML = ""
+
+               let errores = []
+
+               let campoEmail = document.querySelector("input#usuario");
+               if (campoEmail.value == ""){
+                   errores.push ("Ingrese su email completo")
+               }
+       
+               let campoPassword = document.querySelector("input#contraseña");
+               if (campoPassword.value == ""){
+                   errores.push ("Su contraseña no debe estar vacia")
+               } else if (campoPassword.value.length < 8){
+                   errores.push ("Su contraseña debe tener mas de 8 caracteres")
+               }
+
+                let campobox = document.querySelector('input#box')
+                if (campobox.value = ""){
+                    ulErrores.push("Rellene")}
             
-                if (mistakes.length > 0){
-                    error.preventDefault();
-                    for (let i = 0; i < vErrores.length; i++) {
-                        vErrores.innerHTML += <li>"Los campos no pueden estar vacios"</li>
+                if (errores.length > 0){
+                    e.preventDefault();
+                    for (let i = 0; i < errores.length; i++) {
+                        ulErrores.innerHTML += "<li>"+ errores[i] +"</li>"
                     }}
 
             })
     
             bSubmit.addEventListener("click", function () {
-                mistakes.style.visibility = "visible";
+                ulErrores.style.visibility = "visible";
     
             })
       })
