@@ -20,13 +20,11 @@
 
 <main class="contenedor">
     <div class="flex">
-        
         <% for (let i = 0; i < products.length; i++) { %>
             <%-include('./partials/productCard', {producto: products[i]})%>
          <% } %>
     </div>
-    <a href="/add">Crear Producto</a>
-
+    <a href="/add"><input type="button" id="boton" value="Crear producto"></a>
 </main>
   
 

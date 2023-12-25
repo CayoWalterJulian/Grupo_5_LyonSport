@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,16 +151,9 @@
                 </a>
             </div>
         </div> -->
-        <div class="boton"> 
-            <form method="POST" action="/products/<%=product.id%>?_method=DELETE">
-                <button type="submit">ELIMINAR</button>
-            </form>
-        </div>
-        <div class="boton"> 
-                <a href="/edit/<%=product.id%>">
-                    <button type="submit">Editar</button>
-                </a>
-        </div>
+        
+        <a href="/edit/<%=product.id%>"><input type="button" class="boton" value="Editar producto"></a>
+        <form method="POST" action="/products/<%=product.id%>?_method=DELETE"><input type="submit" class="boton" value="Eliminar producto"> </form>
     </main>
 
 

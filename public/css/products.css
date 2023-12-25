@@ -57,6 +57,16 @@ main{
     font-weight: 900;
     color: green;
 }
+#boton{
+    position: relative;
+    left: 10%;
+    padding: 10px;
+    margin: 30px;
+    color: white;
+    background-color:navy;
+    border-radius: 10px;
+    font-size: 2ex;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
 }
@@ -69,5 +79,3 @@ main{
     }
 
 }
-
-

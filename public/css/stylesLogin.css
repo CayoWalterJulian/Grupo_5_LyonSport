@@ -99,6 +99,10 @@ main a{
 .ingreso a:hover{
     text-decoration: underline;
 }
+label{
+    color: #edf0f0;
+}
+
 @media (max-width:991px) {
 
     main body {
@@ -109,3 +113,4 @@ main a{
         width: 340px;
     }
 }
+
