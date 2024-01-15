@@ -20,6 +20,7 @@ const productosTotal = (req, res) => {
         .then(function(products){
             return res.render('products', { products : products })
         })
+        
 }
 
 

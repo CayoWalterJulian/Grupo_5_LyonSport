@@ -60,13 +60,20 @@ main{
 #boton{
     position: relative;
     left: 10%;
-    padding: 10px;
-    margin: 30px;
-    color: white;
-    background-color:navy;
+    padding: 20px;
+    margin: 40px;
+    color: black;
+    background-color:white;
     border-radius: 10px;
     font-size: 2ex;
+    border: solid 1px black;
+    cursor: pointer;
+    font-size: 15px;
 }
+#boton:hover{
+    background-color:#7052ff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
 }

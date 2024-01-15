@@ -114,19 +114,19 @@ const usersController = {
     ,
 
 
-    editProfile: (req, res) => {    
-                db.User.update({
+    editProfile: async (req, res) => {   
+            await (db.User.update({
                     name: req.body.name,
                     email: req.body.email,
                     password: bcryptjs.hashSync(req.body.password, 10),
                     profile_img: req.file.filename
-                }, {
+                }, 
+                await {
                     where: {
                         id: req.params.id
                     }
-                })
+                }))
                 res.redirect("/profile")
-            
     },
 
     dataUsersApi : (req,res) => {

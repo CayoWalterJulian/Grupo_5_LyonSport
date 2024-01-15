@@ -33,27 +33,16 @@ main input, button {
     outline: none;
     color: #ffffff;
     font-size: 16px;
+    cursor: pointer;
 }
+
 main label{
     color: white;
 }
-#back{
-    cursor: pointer;
-}
+
 
 #titulo{
     color: #ffffff;
     text-align: center;
     margin: 30px;
-}
-
-.btn, button {
-    background-color: #e53854;
-    border: 2px solid #e53854;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #f33f5a;
-    border: 2px solid #f33f5a;
 }

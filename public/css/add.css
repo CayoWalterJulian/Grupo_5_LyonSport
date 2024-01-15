@@ -33,13 +33,13 @@ main input {
     margin-bottom: 30px;
     color: #ffffff;
     font-size: 16px;
+    cursor: pointer;
 }
+
 main label{
     color: white;
 }
-#boton{
-   cursor: pointer;
-}
+
 #titulo{
     color: #ffffff;
     text-align: center;
